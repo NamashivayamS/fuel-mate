@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FuelMate - Result</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand" href="/">FuelMate</a>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <h2>Fuel Prediction</h2>
+      {% if fuel_required %}
+        <div class="alert alert-success">
+          <strong>Estimated Fuel Required:</strong> {{ fuel_required }} liters
+        </div>
+        <p><strong>Distance:</strong> {{ distance }} km</p>
+        <p><strong>Elevation Type:</strong> {{ elevation }}</p>
+      {% elif error %}
+        <div class="alert alert-danger">{{ error }}</div>
+      {% endif %}
+      <form method="POST">
+        <label class="form-label">Source</label>
+        <input name="source" class="form-control" required>
+        <label class="form-label">Destination</label>
+        <input name="destination" class="form-control" required>
+        <label class="form-label">Vehicle Weight (kg)</label>
+        <input type="number" name="vehicle_weight" class="form-control" required>
+        <label class="form-label">Driving Style</label>
+        <select name="driving_style" class="form-control">
+          <option value="eco">Eco</option>
+          <option value="normal">Normal</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+        <label class="form-label">Fuel Type</label>
+        <select name="fuel_type" class="form-control">
+          <option value="petrol">Petrol</option>
+          <option value="diesel">Diesel</option>
+        </select>
+        <label class="form-label">Temperature (°C)</label>
+        <input type="number" name="temperature" class="form-control" required>
+        <button type="submit" class="btn btn-primary">Predict</button>
+      </form>
+      <a href="/" class="btn btn-link mt-3">Back to Home</a>
+    </div>
+  </div>
+  <div class="footer">&copy; 2024 FuelMate. All rights reserved.</div>
+</body>
+</html>

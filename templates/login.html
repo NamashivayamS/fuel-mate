@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FuelMate - Login</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand" href="/">FuelMate</a>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <h2 class="text-center">Sign In to FuelMate</h2>
+      <form action="/login" method="post">
+        <label class="form-label" for="loginEmail">Email</label>
+        <input type="email" class="form-control" name="email" id="loginEmail" required>
+        <label class="form-label" for="loginPassword">Password</label>
+        <input type="password" class="form-control" name="password" id="loginPassword" required>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+      <hr style="margin:2rem 0;">
+      <h3 class="text-center">Or Sign Up</h3>
+      <form id="signupForm">
+        <label class="form-label" for="signupName">Full Name</label>
+        <input type="text" class="form-control" id="signupName" required>
+        <label class="form-label" for="signupEmail">Email</label>
+        <input type="email" class="form-control" id="signupEmail" required>
+        <label class="form-label" for="signupPassword">Password</label>
+        <input type="password" class="form-control" id="signupPassword" required>
+        <button type="submit" class="btn btn-primary w-100">Create Account</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer">&copy; 2024 FuelMate. All rights reserved.</div>
+</body>
+</html>

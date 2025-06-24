@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FuelMate - Smart Fuel Predictor</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="navbar-brand" href="/">FuelMate</a>
+  </nav>
+  <div class="container">
+    <div class="card">
+      <h2 class="text-center">Fuel Consumption Predictor</h2>
+      <form id="fuelForm">
+        <label class="form-label" for="source">Source</label>
+        <select id="source" class="form-control" required>
+          <option disabled selected>Select Source</option>
+          <option>Coimbatore</option>
+          <option>Trichy</option>
+          <option>Chennai</option>
+          <option>Bangalore</option>
+          <option>Madurai</option>
+          <option>Salem</option>
+          <option>Erode</option>
+          <option>Tirunelveli</option>
+          <option>Thanjavur</option>
+          <option>Kanyakumari</option>
+          <option>Rameswaram</option>
+          <option>Dindigul</option>
+          <option>Yercaud</option>
+          <option>Kodaikanal</option>
+          <option>Ooty</option>
+        </select>
+        <label class="form-label" for="destination">Destination</label>
+        <select id="destination" class="form-control" required>
+          <option disabled selected>Select Destination</option>
+          <option>Ooty</option>
+          <option>Trichy</option>
+          <option>Chennai</option>
+          <option>Bangalore</option>
+          <option>Madurai</option>
+          <option>Salem</option>
+          <option>Erode</option>
+          <option>Tirunelveli</option>
+          <option>Thanjavur</option>
+          <option>Kanyakumari</option>
+          <option>Rameswaram</option>
+          <option>Dindigul</option>
+          <option>Yercaud</option>
+          <option>Kodaikanal</option>
+          <option>Coimbatore</option>
+        </select>
+        <label class="form-label" for="vehicle_weight">Vehicle Weight (kg)</label>
+        <input type="number" id="vehicle_weight" class="form-control" value="1500" required>
+        <label class="form-label" for="driving_style">Driving Style</label>
+        <select id="driving_style" class="form-control">
+          <option value="eco">Eco</option>
+          <option value="normal" selected>Normal</option>
+          <option value="aggressive">Aggressive</option>
+        </select>
+        <label class="form-label" for="fuel_type">Fuel Type</label>
+        <select id="fuel_type" class="form-control">
+          <option value="petrol" selected>Petrol</option>
+          <option value="diesel">Diesel</option>
+        </select>
+        <label class="form-label" for="temperature">Temperature (°C)</label>
+        <input type="number" id="temperature" class="form-control" value="25">
+        <button type="submit" class="btn btn-primary w-100">Predict Fuel</button>
+      </form>
+      <div class="result text-center mt-4" id="result" style="display:none;">
+        <h5 class="mt-3">Prediction Result</h5>
+        <p id="distance"></p>
+        <p id="min_fuel"></p>
+        <p id="safe_fuel"></p>
+        <p id="elevation_note" class="text-warning fw-semibold"></p>
+      </div>
+    </div>
+  </div>
+  <div class="footer">&copy; 2024 FuelMate. All rights reserved.</div>
+  <script>
+    const form = document.getElementById('fuelForm');
+    const resultDiv = document.getElementById('result');
+    const resultFields = {
+      distance: document.getElementById('distance'),
+      min_fuel: document.getElementById('min_fuel'),
+      safe_fuel: document.getElementById('safe_fuel'),
+      elevation_note: document.getElementById('elevation_note')
+    };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      resultDiv.style.display = 'none';
+      const data = {
+        source: document.getElementById('source').value,
+        destination: document.getElementById('destination').value,
+        vehicle_weight: parseInt(document.getElementById('vehicle_weight').value),
+        driving_style: document.getElementById('driving_style').value,
+        fuel_type: document.getElementById('fuel_type').value,
+        temperature: parseFloat(document.getElementById('temperature').value)
+      };
+      try {
+        const res = await fetch('/predict', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await res.json();
+        if (result.error) {
+          alert("Error: " + result.error);
+        } else {
+          resultDiv.style.display = 'block';
+          resultFields.distance.textContent = `Distance: ${result.distance}`;
+          resultFields.min_fuel.textContent = `Minimum Fuel: ${result.min_fuel} L`;
+          resultFields.safe_fuel.textContent = `Recommended Fuel (with buffer): ${result.safe_fuel} L`;
+          resultFields.elevation_note.textContent = result.elevation_warning ? "Warning: Steep elevation detected!" : "";
+        }
+      } catch (err) {
+        alert("Error communicating with server.");
+        console.error(err);
+      }
+    });
+  </script>
+</body>
+</html>
