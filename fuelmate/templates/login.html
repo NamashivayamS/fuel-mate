@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuelMate - Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .auth-body {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .auth-card {
+      border-radius: 15px;
+      border: none;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .auth-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+    .auth-card .fa-gas-pump {
+      color: #764ba2;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .auth-card:hover .fa-gas-pump {
+      transform: rotate(-15deg);
+    }
+    .nav-tabs {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    }
+    .nav-tabs .nav-link {
+      border: none;
+      color: #6c757d;
+      font-weight: 600;
+      padding: 12px 0;
+      position: relative;
+    }
+    .nav-tabs .nav-link.active {
+      color: #764ba2;
+      background: transparent;
+    }
+    .nav-tabs .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      border-radius: 3px;
+    }
+    .form-control {
+      border: 2px solid #e9ecef;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .form-control:focus {
+      border-color: #764ba2;
+      box-shadow: 0 0 0 0.25rem rgba(118, 75, 162, 0.25);
+    }
+    .btn-primary {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
+    }
+    .btn-danger {
+      background: #ea4335;
+      border: none;
+      font-weight: 600;
+    }
+    .btn-danger:hover {
+      background: #c23321;
+    }
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .social-btn:hover {
+      transform: scale(1.1);
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #1f4e79 !important;
+    }
+    @media (max-width: 576px) {
+      .auth-card {
+        margin: 20px;
+        border-radius: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <i class="fas fa-gas-pump me-2"></i>FuelMate
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services">Our Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="auth-body" style="padding-top: 80px;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <div class="card auth-card shadow-sm">
+            <div class="card-body p-4">
+              <div class="text-center mb-4">
+                <i class="fas fa-gas-pump fa-3x mb-3"></i>
+                <h2 class="h4">Welcome to FuelMate</h2>
+              </div>
+
+              <ul class="nav nav-tabs nav-justified mb-4" id="authTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button">Login</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="signup-tab" data-bs-toggle="tab" data-bs-target="#signup" type="button">Sign Up</button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="authTabContent">
+                <div class="tab-pane fade show active" id="login" role="tabpanel">
+                  <button type="button" id="googleSignIn" class="btn btn-danger w-100 mb-3">
+                    <i class="fab fa-google me-2"></i>Sign in with Google
+                  </button>
+                  <form id="emailLoginForm">
+                    <div class="mb-3">
+                      <label for="loginEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="loginEmail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="loginPassword" class="form-label">Password</label>
+                      <div class="input-group">
+                        <input type="password" class="form-control" id="loginPassword" required>
+                        <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                  </form>
+                  <div class="d-flex justify-content-between mt-3">
+                    <a href="#" class="text-decoration-none">Forgot password?</a>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="signup" role="tabpanel">
+                  <form id="emailRegisterForm">
+                    <div class="mb-3">
+                      <label for="signupName" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="signupName" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="signupEmail" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="signupEmail" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="signupPassword" class="form-label">Password</label>
+                      <div class="input-group">
+                        <input type="password" class="form-control" id="signupPassword" required>
+                        <button class="btn btn-outline-secondary" type="button" id="toggleSignupPassword">
+                          <i class="fas fa-eye"></i>
+                        </button>
+                      </div>
+                      <div class="form-text">At least 8 characters</div>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">
+                      <span id="signupSpinner" class="spinner-border spinner-border-sm d-none"></span>
+                      Create Account
+                    </button>
+                  </form>
+                </div>
+              </div>
+
+              <div class="text-center mt-4">
+                <p class="text-muted">Or continue with</p>
+                <div class="d-flex justify-content-center gap-3">
+                  <button class="btn btn-outline-danger rounded-circle social-btn" id="googleSignInIcon">
+                    <i class="fab fa-google"></i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC8vPBK2aF5WKI1rXNjhyoWbrq_yW5XooE",
+      authDomain: "fuel-mate-45ef6.firebaseapp.com",
+      projectId: "fuel-mate-45ef6",
+      storageBucket: "fuel-mate-45ef6.appspot.com",
+      messagingSenderId: "286299797200",
+      appId: "1:286299797200:web:f2bc97a4ebb1123a2ed0d5",
+      measurementId: "G-RQK6QR1TEY"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+
+    // Google Sign-In
+    document.getElementById('googleSignIn').onclick = googleLogin;
+    document.getElementById('googleSignInIcon').onclick = googleLogin;
+    function googleLogin() {
+      const provider = new firebase.auth.GoogleAuthProvider();
+      auth.signInWithPopup(provider)
+        .then(async (result) => {
+          const user = result.user;
+          // Store user profile in Firestore if not present
+          const userRef = db.collection('users').doc(user.uid);
+          const docSnap = await userRef.get();
+          if (!docSnap.exists) {
+            await userRef.set({
+              uid: user.uid,
+              name: user.displayName,
+              email: user.email,
+              photoURL: user.photoURL,
+              provider: 'google',
+              createdAt: firebase.firestore.FieldValue.serverTimestamp()
+            });
+          }
+          window.location.href = '/predict';
+        })
+        .catch((error) => {
+          alert('Google sign-in failed: ' + error.message);
+        });
+    }
+
+    // Email/Password Login
+    document.getElementById('emailLoginForm').onsubmit = function(e) {
+      e.preventDefault();
+      const email = document.getElementById('loginEmail').value;
+      const password = document.getElementById('loginPassword').value;
+      auth.signInWithEmailAndPassword(email, password)
+        .then((result) => {
+          window.location.href = '/predict';
+        })
+        .catch((error) => {
+          alert('Login failed: ' + error.message);
+        });
+    };
+
+    // Email/Password Registration
+    document.getElementById('emailRegisterForm').onsubmit = function(e) {
+      e.preventDefault();
+      const name = document.getElementById('signupName').value;
+      const email = document.getElementById('signupEmail').value;
+      const password = document.getElementById('signupPassword').value;
+      if (password.length < 8) {
+        alert('Password must be at least 8 characters long');
+        return;
+      }
+      document.getElementById('signupSpinner').classList.remove('d-none');
+      auth.createUserWithEmailAndPassword(email, password)
+        .then(async (result) => {
+          const user = result.user;
+          // Store user profile in Firestore
+          await db.collection('users').doc(user.uid).set({
+            uid: user.uid,
+            name: name,
+            email: user.email,
+            provider: 'email',
+            createdAt: firebase.firestore.FieldValue.serverTimestamp()
+          });
+          window.location.href = '/predict';
+        })
+        .catch((error) => {
+          alert('Registration failed: ' + error.message);
+        })
+        .finally(() => {
+          document.getElementById('signupSpinner').classList.add('d-none');
+        });
+    };
+
+    // Password toggle
+    document.getElementById('toggleLoginPassword').addEventListener('click', function () {
+      const passwordField = document.getElementById('loginPassword');
+      const icon = this.querySelector('i');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
+      } else {
+        passwordField.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye');
+      }
+    });
+    document.getElementById('toggleSignupPassword').addEventListener('click', function () {
+      const passwordField = document.getElementById('signupPassword');
+      const icon = this.querySelector('i');
+      if (passwordField.type === 'password') {
+        passwordField.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash');
+      } else {
+        passwordField.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye');
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

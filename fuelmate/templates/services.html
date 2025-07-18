@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - FuelMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .navbar-brand {
+            font-weight: bold;
+            color: #1f4e79 !important;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+        }
+        .service-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        .service-icon {
+            font-size: 3rem;
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:before {
+            content: "✓";
+            color: #28a745;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-gas-pump me-2"></i>FuelMate
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/services">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav">
+                    {% if session.user_id %}
+                        <span class="navbar-text me-3">Welcome, {{ session.username }}!</span>
+                        <a class="nav-link" href="/predict">Predict Fuel</a>
+                        <a class="nav-link" href="/logout">Logout</a>
+                    {% else %}
+                        <a class="btn btn-primary" href="/login">Login</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Our Services</h1>
+            <p class="lead">Comprehensive fuel prediction solutions for every journey</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h4>Route Analysis</h4>
+                        <p>Advanced route analysis using Google Maps API to calculate precise distances and elevation changes for any global route.</p>
+                        <ul class="feature-list text-start">
+                            <li>Real-time distance calculation</li>
+                            <li>Elevation change detection</li>
+                            <li>Global route coverage</li>
+                            <li>Multiple route options</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI Prediction</h4>
+                        <p>Machine learning-powered fuel consumption prediction based on multiple variables and real-world data analysis.</p>
+                        <ul class="feature-list text-start">
+                            <li>ML-based predictions</li>
+                            <li>Multi-factor analysis</li>
+                            <li>High accuracy rates</li>
+                            <li>Continuous learning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <div class="service-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Cost Estimation</h4>
+                        <p>Comprehensive cost analysis including fuel prices, terrain factors, and safety buffers for complete trip planning.</p>
+                        <ul class="feature-list text-start">
+                            <li>Real-time fuel prices</li>
+                            <li>Cost breakdown</li>
+                            <li>Safety buffer calculation</li>
+                            <li>Budget planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Features -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Advanced Features</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card p-4">
+                        <h5><i class="fas fa-shield-alt text-primary me-2"></i>Safety Alerts</h5>
+                        <p>Get notified about challenging terrain, high fuel consumption areas, and recommended safety measures for your journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card p-4">
+                        <h5><i class="fas fa-mobile-alt text-primary me-2"></i>Mobile Friendly</h5>
+                        <p>Access FuelMate on any device with our responsive design, perfect for on-the-go fuel planning.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card p-4">
+                        <h5><i class="fas fa-history text-primary me-2"></i>Trip History</h5>
+                        <p>Track your previous predictions and compare actual vs predicted fuel consumption for continuous improvement.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card service-card p-4">
+                        <h5><i class="fas fa-users text-primary me-2"></i>User Accounts</h5>
+                        <p>Create personalized accounts to save your vehicle preferences and access your prediction history.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Pricing Plans</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-4">
+                    <div class="card service-card text-center p-4">
+                        <h4>Free Plan</h4>
+                        <div class="display-4 text-primary mb-3">₹0</div>
+                        <p class="text-muted">Perfect for occasional travelers</p>
+                        <ul class="feature-list text-start">
+                            <li>5 predictions per month</li>
+                            <li>Basic route analysis</li>
+                            <li>Standard accuracy</li>
+                            <li>Email support</li>
+                        </ul>
+                        {% if session.user_id %}
+                            <a href="/predict" class="btn btn-primary">Start Using</a>
+                        {% else %}
+                            <a href="/login" class="btn btn-primary">Get Started</a>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card service-card text-center p-4 border-primary">
+                        <div class="badge bg-primary position-absolute top-0 start-50 translate-middle">Popular</div>
+                        <h4>Pro Plan</h4>
+                        <div class="display-4 text-primary mb-3">₹299</div>
+                        <p class="text-muted">For frequent travelers</p>
+                        <ul class="feature-list text-start">
+                            <li>Unlimited predictions</li>
+                            <li>Advanced analytics</li>
+                            <li>Priority support</li>
+                            <li>Trip history</li>
+                            <li>Custom vehicle profiles</li>
+                        </ul>
+                        <a href="/contact" class="btn btn-primary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 FuelMate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
