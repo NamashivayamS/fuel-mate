@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuelMate - Fuel Predictor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--primary:#6c63ff;--accent:#ff6584;--dark:#0f0f1a;--dark2:#1a1a2e;--dark3:#16213e;--card-bg:rgba(255,255,255,0.05);--text-muted:#a0aec0;--border:rgba(255,255,255,0.08);--success:#4ade80;}
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:var(--dark);color:#fff;min-height:100vh;display:flex;flex-direction:column;}
+    .navbar{background:rgba(15,15,26,0.9)!important;backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:14px 0;position:sticky;top:0;z-index:1000;}
+    .navbar-brand{font-size:1.3rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+    .nav-link{color:#cbd5e0!important;font-weight:500;padding:6px 14px!important;border-radius:8px;transition:all 0.2s;}
+    .nav-link:hover{color:#fff!important;background:rgba(108,99,255,0.15);}
+    .welcome-badge{background:rgba(108,99,255,0.15);border:1px solid rgba(108,99,255,0.3);color:#a78bfa;padding:5px 14px;border-radius:50px;font-size:0.82rem;font-weight:600;}
+    .btn-nav{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff!important;padding:7px 20px;border-radius:50px;font-weight:600;font-size:0.88rem;text-decoration:none;transition:transform 0.2s,box-shadow 0.2s;}
+    .btn-nav:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(108,99,255,0.4);}
+    .predict-layout{display:grid;grid-template-columns:420px 1fr;flex:1;min-height:calc(100vh - 65px);}
+    @media(max-width:991px){.predict-layout{grid-template-columns:1fr;}}
+    .left-panel{background:var(--dark2);border-right:1px solid var(--border);overflow-y:auto;padding:24px 20px;display:flex;flex-direction:column;gap:16px;}
+    .panel-header{text-align:center;padding-bottom:14px;border-bottom:1px solid var(--border);}
+    .panel-header .icon-wrap{width:50px;height:50px;border-radius:14px;background:linear-gradient(135deg,var(--primary),var(--accent));display:flex;align-items:center;justify-content:center;font-size:1.3rem;margin:0 auto 8px;}
+    .panel-header h2{font-size:1.1rem;font-weight:800;margin-bottom:3px;}
+    .panel-header p{color:var(--text-muted);font-size:0.78rem;}
+    .steps{display:flex;align-items:center;justify-content:center;}
+    .step{display:flex;flex-direction:column;align-items:center;gap:3px;}
+    .step-dot{width:26px;height:26px;border-radius:50%;border:2px solid var(--border);background:var(--dark);display:flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:700;color:var(--text-muted);transition:all 0.3s;}
+    .step.active .step-dot{background:linear-gradient(135deg,var(--primary),var(--accent));border-color:transparent;color:#fff;}
+    .step.done .step-dot{background:var(--success);border-color:transparent;color:#fff;}
+    .step-label{font-size:0.62rem;color:var(--text-muted);font-weight:500;}
+    .step.active .step-label{color:#a78bfa;}
+    .step-line{width:32px;height:2px;background:var(--border);margin-bottom:14px;transition:background 0.3s;}
+    .step-line.done{background:var(--success);}
+    .form-section{background:var(--card-bg);border:1px solid var(--border);border-radius:14px;padding:16px;}
+    .form-section-title{font-size:0.75rem;font-weight:700;color:#a78bfa;text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;display:flex;align-items:center;gap:7px;}
+    .form-label{color:#cbd5e0;font-size:0.8rem;font-weight:500;margin-bottom:4px;}
+    .form-control,.form-select{background:rgba(255,255,255,0.05);border:1px solid var(--border);color:#fff;border-radius:10px;padding:9px 13px;font-size:0.86rem;transition:all 0.2s;font-family:'Inter',sans-serif;}
+    .form-control:focus,.form-select:focus{background:rgba(255,255,255,0.08);border-color:rgba(108,99,255,0.6);box-shadow:0 0 0 3px rgba(108,99,255,0.12);color:#fff;outline:none;}
+    .form-control::placeholder{color:rgba(255,255,255,0.2);}
+    .form-select option{background:#1a1a2e;color:#fff;}
+    .input-icon-wrap{position:relative;}
+    .input-icon-wrap .icon{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:0.82rem;pointer-events:none;}
+    .input-icon-wrap .form-control{padding-left:32px;}
+    .style-pills{display:flex;gap:7px;}
+    .style-pill{flex:1;padding:8px 4px;border-radius:10px;border:1px solid var(--border);background:rgba(255,255,255,0.03);text-align:center;cursor:pointer;transition:all 0.2s;font-size:0.75rem;font-weight:600;color:var(--text-muted);}
+    .style-pill:hover{border-color:rgba(108,99,255,0.4);color:#fff;}
+    .style-pill.selected{background:linear-gradient(135deg,rgba(108,99,255,0.25),rgba(255,101,132,0.15));border-color:rgba(108,99,255,0.6);color:#fff;}
+    .style-pill .pill-icon{font-size:1rem;display:block;margin-bottom:2px;}
+    .fuel-toggle{display:flex;background:rgba(255,255,255,0.04);border-radius:10px;padding:3px;border:1px solid var(--border);}
+    .fuel-btn{flex:1;padding:8px;border-radius:8px;border:none;background:transparent;color:var(--text-muted);font-size:0.8rem;font-weight:600;cursor:pointer;transition:all 0.2s;display:flex;align-items:center;justify-content:center;gap:5px;}
+    .fuel-btn.active{background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;}
+    .vehicle-display{background:rgba(108,99,255,0.08);border:1px solid rgba(108,99,255,0.2);border-radius:10px;padding:9px 13px;display:none;}
+    .vehicle-display.show{display:flex;align-items:center;gap:9px;}
+    .vehicle-display .vd-icon{font-size:1.2rem;}
+    .vehicle-display .vd-name{font-weight:700;color:#fff;font-size:0.82rem;}
+    .vehicle-display .vd-specs{color:var(--text-muted);font-size:0.73rem;}
+    .btn-predict{width:100%;padding:13px;border:none;border-radius:12px;background:linear-gradient(135deg,var(--primary),var(--accent));color:#fff;font-weight:800;font-size:0.95rem;cursor:pointer;transition:transform 0.2s,box-shadow 0.2s;display:flex;align-items:center;justify-content:center;gap:9px;}
+    .btn-predict:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(108,99,255,0.45);}
+    .btn-predict .spinner{display:none;width:17px;height:17px;border:2px solid rgba(255,255,255,0.3);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;}
+    .btn-predict.loading .spinner{display:block;}
+    .btn-predict.loading .btn-text{display:none;}
+    @keyframes spin{to{transform:rotate(360deg);}}
+    .right-panel{display:flex;flex-direction:column;}
+    #map{flex:1;min-height:400px;background:var(--dark3);display:none;}
+    .map-placeholder{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;background:radial-gradient(ellipse at center,rgba(108,99,255,0.08) 0%,transparent 70%),var(--dark3);min-height:400px;}
+    .map-placeholder .mp-icon{font-size:3.5rem;opacity:0.25;}
+    .map-placeholder p{color:var(--text-muted);font-size:0.88rem;}
+    .results-bar{background:var(--dark2);border-top:1px solid var(--border);padding:20px 24px;display:none;}
+    .results-bar.show{display:block;}
+    .results-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px;}
+    @media(max-width:767px){.results-grid{grid-template-columns:repeat(2,1fr);}}
+    .result-stat{background:var(--card-bg);border:1px solid var(--border);border-radius:13px;padding:14px;text-align:center;transition:border-color 0.3s;}
+    .result-stat:hover{border-color:rgba(108,99,255,0.4);}
+    .result-stat .rs-icon{font-size:1.2rem;margin-bottom:5px;}
+    .result-stat .rs-value{font-size:1.15rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+    .result-stat .rs-label{font-size:0.7rem;color:var(--text-muted);margin-top:2px;font-weight:500;}
+    .cost-banner{background:linear-gradient(135deg,rgba(108,99,255,0.2),rgba(255,101,132,0.15));border:1px solid rgba(108,99,255,0.35);border-radius:14px;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+    .cost-banner .cb-label{color:var(--text-muted);font-size:0.82rem;}
+    .cost-banner .cb-value{font-size:1.75rem;font-weight:800;background:linear-gradient(135deg,var(--primary),var(--accent));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+    .cost-banner .cb-meta{display:flex;gap:10px;flex-wrap:wrap;}
+    .cost-banner .cb-tag{background:rgba(255,255,255,0.06);border:1px solid var(--border);border-radius:8px;padding:4px 11px;font-size:0.76rem;color:#cbd5e0;display:flex;align-items:center;gap:5px;}
+    .terrain-alert{background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.3);color:#fbbf24;border-radius:10px;padding:10px 15px;font-size:0.82rem;display:none;align-items:center;gap:8px;margin-top:12px;}
+    .terrain-alert.show{display:flex;}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+    .animate-in{animation:fadeUp 0.4s ease forwards;}
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="/"><i class="fas fa-gas-pump me-2"></i>FuelMate</a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><i class="fas fa-bars text-white"></i></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto ms-3">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/services">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+      <div class="d-flex align-items-center gap-3">
+        <span class="welcome-badge"><i class="fas fa-user-circle me-1"></i>{{ session['username'] }}</span>
+        <a href="/logout" class="btn-nav">Logout</a>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="predict-layout">
+  <div class="left-panel">
+    <div class="panel-header">
+      <div class="icon-wrap">&#9981;</div>
+      <h2>Fuel Predictor</h2>
+      <p>AI-powered trip fuel estimation</p>
+    </div>
+    <div class="steps">
+      <div class="step active" id="step1"><div class="step-dot">1</div><div class="step-label">Route</div></div>
+      <div class="step-line" id="line1"></div>
+      <div class="step" id="step2"><div class="step-dot">2</div><div class="step-label">Vehicle</div></div>
+      <div class="step-line" id="line2"></div>
+      <div class="step" id="step3"><div class="step-dot">3</div><div class="step-label">Settings</div></div>
+      <div class="step-line" id="line3"></div>
+      <div class="step" id="step4"><div class="step-dot">4</div><div class="step-label">Result</div></div>
+    </div>
+    <form id="fuelForm" novalidate>
+      <div class="form-section">
+        <div class="form-section-title"><i class="fas fa-route"></i> Route Details</div>
+        <div class="mb-3">
+          <label class="form-label">Origin</label>
+          <div class="input-icon-wrap">
+            <i class="fas fa-map-marker-alt icon" style="color:#4ade80;"></i>
+            <input type="text" id="source" class="form-control" placeholder="Enter starting point" required>
+          </div>
+        </div>
+        <div class="mb-0">
+          <label class="form-label">Destination</label>
+          <div class="input-icon-wrap">
+            <i class="fas fa-map-marker-alt icon" style="color:#ff6584;"></i>
+            <input type="text" id="destination" class="form-control" placeholder="Enter destination" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="form-section-title"><i class="fas fa-car"></i> Vehicle</div>
+        <div class="row g-2 mb-2">
+          <div class="col-6">
+            <label class="form-label">Make</label>
+            <select id="vehicle_make" class="form-select" required><option value="">Select Make</option></select>
+          </div>
+          <div class="col-6">
+            <label class="form-label">Model</label>
+            <select id="vehicle_model" class="form-select" required disabled><option value="">Select Model</option></select>
+          </div>
+        </div>
+        <div class="vehicle-display" id="vehicleDisplay">
+          <span class="vd-icon">&#128663;</span>
+          <div><div class="vd-name" id="vd_name">-</div><div class="vd-specs" id="vd_specs">-</div></div>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="form-section-title"><i class="fas fa-sliders-h"></i> Trip Settings</div>
+        <label class="form-label mb-2">Driving Style</label>
+        <div class="style-pills mb-3">
+          <div class="style-pill selected" data-value="eco" onclick="selectStyle(this)"><span class="pill-icon">&#127807;</span>Eco</div>
+          <div class="style-pill" data-value="normal" onclick="selectStyle(this)"><span class="pill-icon">&#128663;</span>Normal</div>
+          <div class="style-pill" data-value="aggressive" onclick="selectStyle(this)"><span class="pill-icon">&#128293;</span>Sport</div>
+        </div>
+        <input type="hidden" id="driving_style" value="eco">
+        <label class="form-label mb-2">Fuel Type</label>
+        <div class="fuel-toggle mb-3">
+          <button type="button" class="fuel-btn active" data-value="petrol" onclick="selectFuel(this)"><i class="fas fa-gas-pump"></i> Petrol</button>
+          <button type="button" class="fuel-btn" data-value="diesel" onclick="selectFuel(this)"><i class="fas fa-oil-can"></i> Diesel</button>
+        </div>
+        <input type="hidden" id="fuel_type" value="petrol">
+        <label class="form-label">Temperature (C)</label>
+        <div class="input-icon-wrap">
+          <i class="fas fa-thermometer-half icon"></i>
+          <input type="number" id="temperature" class="form-control" value="25" min="-20" max="55">
+        </div>
+      </div>
+      <button type="submit" class="btn-predict" id="predictBtn">
+        <div class="spinner"></div>
+        <span class="btn-text"><i class="fas fa-bolt me-2"></i>Predict Fuel Consumption</span>
+      </button>
+    </form>
+  </div>
+  <div class="right-panel">
+    <div class="map-placeholder" id="mapPlaceholder">
+      <div class="mp-icon">&#128506;</div>
+      <p>Enter a route to see it on the map</p>
+    </div>
+    <div id="map"></div>
+    <div class="results-bar" id="resultsBar">
+      <div class="results-grid animate-in">
+        <div class="result-stat"><div class="rs-icon">&#128205;</div><div class="rs-value" id="res_distance">-</div><div class="rs-label">Distance (km)</div></div>
+        <div class="result-stat"><div class="rs-icon">&#9981;</div><div class="rs-value" id="res_min_fuel">-</div><div class="rs-label">Min Fuel (L)</div></div>
+        <div class="result-stat"><div class="rs-icon">&#128737;</div><div class="rs-value" id="res_safe_fuel">-</div><div class="rs-label">Safe Reserve (L)</div></div>
+        <div class="result-stat"><div class="rs-icon">&#128167;</div><div class="rs-value" id="res_price">-</div><div class="rs-label">Fuel Price /L</div></div>
+      </div>
+      <div class="cost-banner animate-in">
+        <div>
+          <div class="cb-label">Estimated Trip Cost</div>
+          <div class="cb-value" id="res_cost">-</div>
+        </div>
+        <div class="cb-meta">
+          <div class="cb-tag"><i class="fas fa-road"></i><span id="res_path">-</span></div>
+          <div class="cb-tag"><i class="fas fa-tachometer-alt"></i><span id="res_style">-</span></div>
+          <div class="cb-tag"><i class="fas fa-gas-pump"></i><span id="res_fuel_type">-</span></div>
+        </div>
+      </div>
+      <div class="terrain-alert" id="terrain_alert">
+        <i class="fas fa-exclamation-triangle"></i>
+        High elevation change detected - expect increased fuel consumption on this route.
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places&callback=initMap" async defer></script>
+<script>
+  var map, ds, dr, selectedEngineSize = 0, selectedCylinders = 0;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 5, center: { lat: 20.5937, lng: 78.9629 },
+      styles: [
+        {elementType:'geometry',stylers:[{color:'#1a1a2e'}]},
+        {elementType:'labels.text.stroke',stylers:[{color:'#0f0f1a'}]},
+        {elementType:'labels.text.fill',stylers:[{color:'#a0aec0'}]},
+        {featureType:'road',elementType:'geometry',stylers:[{color:'#16213e'}]},
+        {featureType:'road.highway',elementType:'geometry',stylers:[{color:'#6c63ff'}]},
+        {featureType:'water',elementType:'geometry',stylers:[{color:'#0f0f1a'}]},
+        {featureType:'poi',stylers:[{visibility:'off'}]},
+        {featureType:'transit',stylers:[{visibility:'off'}]}
+      ]
+    });
+    ds = new google.maps.DirectionsService();
+    dr = new google.maps.DirectionsRenderer({ map: map, polylineOptions: { strokeColor: '#6c63ff', strokeWeight: 5, strokeOpacity: 0.9 } });
+    new google.maps.places.Autocomplete(document.getElementById('source'));
+    new google.maps.places.Autocomplete(document.getElementById('destination'));
+    loadMakes();
+  }
+  async function loadMakes() {
+    var res = await fetch('/api/vehicles/makes');
+    var makes = await res.json();
+    var sel = document.getElementById('vehicle_make');
+    makes.forEach(function(m) { var o = document.createElement('option'); o.value = o.text = m; sel.add(o); });
+  }
+  document.getElementById('vehicle_make').onchange = async function() {
+    var modelSel = document.getElementById('vehicle_model');
+    modelSel.innerHTML = '<option value="">Select Model</option>';
+    document.getElementById('vehicleDisplay').classList.remove('show');
+    if (!this.value) { modelSel.disabled = true; return; }
+    var r = await fetch('/api/vehicles/models/' + this.value);
+    var models = await r.json();
+    models.forEach(function(m) { var o = document.createElement('option'); o.value = o.text = m; modelSel.add(o); });
+    modelSel.disabled = false;
+    setStep(2);
+  };
+  document.getElementById('vehicle_model').onchange = async function() {
+    if (!this.value) return;
+    var make = document.getElementById('vehicle_make').value;
+    var r = await fetch('/api/vehicles/specs?make=' + make + '&model=' + this.value);
+    var specs = await r.json();
+    selectedEngineSize = specs.engine_size;
+    selectedCylinders = specs.cylinders;
+    document.getElementById('vd_name').textContent = make + ' ' + this.value;
+    document.getElementById('vd_specs').textContent = specs.engine_size + 'L - ' + specs.cylinders + ' cyl';
+    document.getElementById('vehicleDisplay').classList.add('show');
+    setStep(3);
+  };
+  function selectStyle(el) {
+    document.querySelectorAll('.style-pill').forEach(function(p) { p.classList.remove('selected'); });
+    el.classList.add('selected');
+    document.getElementById('driving_style').value = el.dataset.value;
+  }
+  function selectFuel(el) {
+    document.querySelectorAll('.fuel-btn').forEach(function(b) { b.classList.remove('active'); });
+    el.classList.add('active');
+    document.getElementById('fuel_type').value = el.dataset.value;
+  }
+  function setStep(n) {
+    for (var i = 1; i <= 4; i++) {
+      var s = document.getElementById('step' + i);
+      s.classList.remove('active', 'done');
+      if (i < n) s.classList.add('done');
+      else if (i === n) s.classList.add('active');
+      if (i < 4) document.getElementById('line' + i).classList.toggle('done', i < n);
+    }
+  }
+  document.getElementById('fuelForm').onsubmit = async function(e) {
+    e.preventDefault();
+    var btn = document.getElementById('predictBtn');
+    btn.classList.add('loading');
+    var data = {
+      source: document.getElementById('source').value,
+      destination: document.getElementById('destination').value,
+      engine_size: selectedEngineSize,
+      cylinders: selectedCylinders,
+      driving_style: document.getElementById('driving_style').value,
+      fuel_type: document.getElementById('fuel_type').value,
+      temperature: document.getElementById('temperature').value
+    };
+    try {
+      var res = await fetch('/predict', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+      var r = await res.json();
+      if (r.error) { alert(r.error); return; }
+      document.getElementById('mapPlaceholder').style.display = 'none';
+      document.getElementById('map').style.display = 'block';
+      ds.route({ origin: data.source, destination: data.destination, travelMode: 'DRIVING' }, function(resp, status) { if (status === 'OK') dr.setDirections(resp); });
+      document.getElementById('res_distance').textContent = r.distance + ' km';
+      document.getElementById('res_min_fuel').textContent = r.min_fuel + ' L';
+      document.getElementById('res_safe_fuel').textContent = r.safe_fuel + ' L';
+      document.getElementById('res_price').textContent = 'Rs.' + r.current_fuel_price;
+      document.getElementById('res_cost').textContent = 'Rs.' + r.estimated_cost;
+      document.getElementById('res_path').textContent = r.path_type;
+      document.getElementById('res_style').textContent = r.driving_style;
+      document.getElementById('res_fuel_type').textContent = r.fuel_type;
+      document.getElementById('terrain_alert').classList.toggle('show', r.terrain_alert);
+      document.getElementById('resultsBar').classList.add('show');
+      setStep(4);
+    } catch(err) {
+      alert('Something went wrong. Please try again.');
+    } finally {
+      btn.classList.remove('loading');
+    }
+  };
+</script>
+</body>
+</html>
