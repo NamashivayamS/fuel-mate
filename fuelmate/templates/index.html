@@ -7,145 +7,30 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    body {
-      background-color: #f5f7fa;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    .navbar-brand {
-      font-weight: bold;
-      color: #1f4e79 !important;
-    }
-    .card {
-      border-radius: 15px;
-      border: none;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    }
-    .result {
-      margin-top: 20px;
-    }
-    .result-card {
-      background: #ffffff;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      padding: 30px;
-      margin-top: 20px;
-    }
-    .result-table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-    .result-table th {
-      background: #1f4e79;
-      color: white;
-      padding: 12px;
-      text-align: left;
-      font-weight: 600;
-    }
-    .result-table td {
-      padding: 12px;
-      border-bottom: 1px solid #eee;
-    }
-    .result-table tr:nth-child(even) {
-      background-color: #f8f9fa;
-    }
-    .alert-box {
-      background: #ffe6e6;
-      border-left: 4px solid #dc3545;
-      padding: 15px;
-      margin: 15px 0;
-      border-radius: 5px;
-    }
-    .alert-box h6 {
-      color: #dc3545;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .cost-highlight {
-      font-size: 1.5rem;
-      font-weight: bold;
-      color: #28a745;
-      text-align: center;
-      padding: 20px;
-      background: #f8fff9;
-      border-radius: 10px;
-      border: 2px solid #28a745;
-    }
-    .map-container {
-      width: 100%;
-      height: 400px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      margin-top: 20px;
-      background: #f8f9fa;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #666;
-    }
-    .btn-primary {
-      background: linear-gradient(90deg, #667eea, #764ba2);
-      border: none;
-      padding: 12px 30px;
-      border-radius: 25px;
-      font-weight: 600;
-    }
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
-    }
-    .nav-btn {
-      display: inline-block;
-      margin: 0 6px;
-      padding: 8px 18px;
-      border-radius: 20px;
-      background: linear-gradient(90deg, #667eea, #764ba2);
-      color: #fff !important;
-      font-weight: 500;
-      border: none;
-      transition: background 0.2s, box-shadow 0.2s, color 0.2s;
-      box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
-      text-decoration: none !important;
-    }
-    .nav-btn:hover, .nav-btn:focus {
-      background: linear-gradient(90deg, #764ba2, #667eea);
-      color: #fff !important;
-      box-shadow: 0 4px 16px rgba(102, 126, 234, 0.18);
-      text-decoration: none !important;
-    }
-    .nav-btn.active, .nav-btn[aria-current="page"] {
-      background: #1f4e79;
-      color: #fff !important;
-    }
+    body { background-color: #f5f7fa; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .navbar-brand { font-weight: bold; color: #1f4e79 !important; }
+    .card { border-radius: 15px; border: none; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .result-card { background: #ffffff; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); padding: 30px; margin-top: 20px; }
+    .result-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    .result-table th { background: #1f4e79; color: white; padding: 12px; text-align: left; }
+    .result-table td { padding: 12px; border-bottom: 1px solid #eee; }
+    .cost-highlight { font-size: 1.5rem; font-weight: bold; color: #28a745; text-align: center; padding: 20px; background: #f8fff9; border-radius: 10px; border: 2px solid #28a745; }
+    .btn-primary { background: linear-gradient(90deg, #667eea, #764ba2); border: none; padding: 12px 30px; border-radius: 25px; font-weight: 600; }
+    .nav-btn { display: inline-block; margin: 0 6px; padding: 8px 18px; border-radius: 20px; background: linear-gradient(90deg, #667eea, #764ba2); color: #fff !important; text-decoration: none !important; }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="/">
-        <i class="fas fa-gas-pump me-2"></i>FuelMate
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <a class="navbar-brand" href="/"><i class="fas fa-gas-pump me-2"></i>FuelMate</a>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-btn" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-btn" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-btn" href="/services">Our Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-btn" href="/contact">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-btn" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-btn" href="/predict">Predictor</a></li>
         </ul>
-        <div class="navbar-nav" id="userNav">
-          <!-- User info and logout will be injected by JS -->
+        <div class="navbar-nav">
+          <span class="navbar-text me-3">Welcome, {{ session['username'] }}!</span>
+          <a class="nav-btn" href="/logout">Logout</a>
         </div>
       </div>
     </div>
@@ -155,35 +40,43 @@
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card shadow-sm p-4">
-          <h2 class="text-center mb-4">🚗 FuelMate - Fuel Consumption Predictor</h2>
+          <h4 class="text-center mb-4">🚗 Smart Fuel Consumption Predictor</h4>
           <form id="fuelForm">
             <div class="row mb-3">
               <div class="col">
-                <label for="source" class="form-label">Source</label>
-                <input type="text" id="source" class="form-control" placeholder="Enter source location" required>
+                <label class="form-label">Source</label>
+                <input type="text" id="source" class="form-control" placeholder="Origin" required>
               </div>
               <div class="col">
-                <label for="destination" class="form-label">Destination</label>
-                <input type="text" id="destination" class="form-control" placeholder="Enter destination location" required>
+                <label class="form-label">Destination</label>
+                <input type="text" id="destination" class="form-control" placeholder="Destination" required>
               </div>
             </div>
 
             <div class="row mb-3">
               <div class="col">
-                <label for="vehicle_weight" class="form-label">Vehicle Weight (kg)</label>
-                <input type="number" id="vehicle_weight" class="form-control" value="1500" required>
+                <label class="form-label">Vehicle Make</label>
+                <select id="vehicle_make" class="form-select" required>
+                  <option value="">Select Make</option>
+                </select>
               </div>
               <div class="col">
-                <label class="form-label">Driving Style</label>
-                <select id="driving_style" class="form-select">
-                  <option value="eco">Eco</option>
-                  <option value="normal" selected>Normal</option>
-                  <option value="aggressive">Aggressive</option>
+                <label class="form-label">Vehicle Model</label>
+                <select id="vehicle_model" class="form-select" required disabled>
+                  <option value="">Select Model</option>
                 </select>
               </div>
             </div>
 
             <div class="row mb-3">
+              <div class="col">
+                <label class="form-label">Driving Style</label>
+                <select id="driving_style" class="form-select">
+                  <option value="eco">Economic</option>
+                  <option value="normal" selected>Normal</option>
+                  <option value="aggressive">Aggressive</option>
+                </select>
+              </div>
               <div class="col">
                 <label class="form-label">Fuel Type</label>
                 <select id="fuel_type" class="form-select">
@@ -191,69 +84,38 @@
                   <option value="diesel">Diesel</option>
                 </select>
               </div>
-              <div class="col">
-                <label for="temperature" class="form-label">Temperature (°C)</label>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label class="form-label">Temperature (°C)</label>
                 <input type="number" id="temperature" class="form-control" value="25">
               </div>
             </div>
 
             <div class="text-center">
-              <button type="submit" class="btn btn-primary px-4">Predict Fuel</button>
+              <button type="submit" class="btn btn-primary px-5">Get Prediction</button>
             </div>
           </form>
 
-          <div class="result text-center mt-4" id="result" style="display:none;">
+          <div class="result mt-4" id="result" style="display:none;">
             <div class="result-card">
-              <h5 class="mb-4">📊 Fuel Prediction Results</h5>
-              
+              <h5 class="text-center mb-4">📊 Prediction Summary</h5>
               <table class="result-table">
-                <thead>
-                  <tr>
-                    <th>Label</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
                 <tbody>
-                  <tr>
-                    <td><strong>Current Fuel Price</strong></td>
-                    <td id="current_fuel_price">₹0.00 per liter</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Distance (km)</strong></td>
-                    <td id="distance">0 km</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Driving Style</strong></td>
-                    <td id="driving_style_display">Balanced</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Path Type</strong></td>
-                    <td id="path_type">Plain</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Fuel Required (Liters)</strong></td>
-                    <td id="min_fuel">0 L</td>
-                  </tr>
-                  <tr>
-                    <td><strong>Safe Fuel Required (Liters)</strong></td>
-                    <td id="safe_fuel">0 L</td>
-                  </tr>
+                  <tr><td><strong>Distance</strong></td><td id="res_distance"></td></tr>
+                  <tr><td><strong>Fuel Required</strong></td><td id="res_min_fuel"></td></tr>
+                  <tr><td><strong>Safe Reserve</strong></td><td id="res_safe_fuel"></td></tr>
+                  <tr><td><strong>Price</strong></td><td id="res_price"></td></tr>
                 </tbody>
               </table>
-
               <div class="cost-highlight mt-4">
-                <i class="fas fa-rupee-sign me-2"></i>
-                Estimated Fuel Cost: <span id="estimated_cost">₹0.00</span>
+                Estimated Trip Cost: <span id="res_cost"></span>
               </div>
-
-              <div id="terrain_alert" class="alert-box" style="display:none;">
-                <h6><i class="fas fa-exclamation-triangle me-2"></i>Terrain/Load Alert</h6>
-                <p class="mb-0">🚨 High fuel consumption detected due to challenging terrain or heavy load. Consider adding extra fuel for safety.</p>
+              <div id="terrain_alert" class="alert alert-warning mt-3" style="display:none;">
+                🚨 High fuel consumption expected due to terrain!
               </div>
-
-              <div class="map-container">
-                <div id="map" style="width:100%;height:100%;min-height:350px;"></div>
-              </div>
+              <div id="map" style="width:100%; height:350px; margin-top:20px; border-radius:10px;"></div>
             </div>
           </div>
         </div>
@@ -261,137 +123,92 @@
     </div>
   </div>
 
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb9KAAjU4wsaxH9nw6LXyowzYr1B-zxBk&libraries=places"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key={{ google_maps_api_key }}&libraries=places"></script>
   <script>
-    let map, directionsService, directionsRenderer;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 7,
-        center: { lat: 20.5937, lng: 78.9629 }, // Center of India
+    let map, ds, dr;
+    let selectedEngineSize = 0, selectedCylinders = 0;
+
+    async function init() {
+      map = new google.maps.Map(document.getElementById('map'), { zoom: 7, center: { lat: 20.5937, lng: 78.9629 } });
+      ds = new google.maps.DirectionsService();
+      dr = new google.maps.DirectionsRenderer({ map: map });
+
+      new google.maps.places.Autocomplete(document.getElementById('source'));
+      new google.maps.places.Autocomplete(document.getElementById('destination'));
+
+      const makeSelect = document.getElementById('vehicle_make');
+      const modelSelect = document.getElementById('vehicle_model');
+      
+      const res = await fetch('/api/vehicles/makes');
+      const makes = await res.json();
+      makes.forEach(m => {
+        let opt = document.createElement('option');
+        opt.value = opt.text = m;
+        makeSelect.add(opt);
       });
-      directionsService = new google.maps.DirectionsService();
-      directionsRenderer = new google.maps.DirectionsRenderer();
-      directionsRenderer.setMap(map);
-    }
-    function showRouteOnMap(source, destination) {
-      if (!directionsService || !directionsRenderer) {
-        initMap();
-      }
-      directionsService.route(
-        {
-          origin: source,
-          destination: destination,
-          travelMode: google.maps.TravelMode.DRIVING,
-        },
-        (response, status) => {
-          if (status === 'OK') {
-            directionsRenderer.setDirections(response);
-          } else {
-            document.getElementById('map').innerHTML = '<div class="text-danger">Unable to display route on map.</div>';
-          }
-        }
-      );
-    }
-    const form = document.getElementById('fuelForm');
-    const resultDiv = document.getElementById('result');
 
-    // Google Places Autocomplete
-    function initAutocomplete() {
-      const sourceInput = document.getElementById('source');
-      const destInput = document.getElementById('destination');
-      if (sourceInput) {
-        new google.maps.places.Autocomplete(sourceInput, { types: ['geocode'] });
-      }
-      if (destInput) {
-        new google.maps.places.Autocomplete(destInput, { types: ['geocode'] });
-      }
+      makeSelect.onchange = async () => {
+        modelSelect.innerHTML = '<option value="">Select Model</option>';
+        if(!makeSelect.value) { modelSelect.disabled = true; return; }
+        const r = await fetch(`/api/vehicles/models/${makeSelect.value}`);
+        const models = await r.json();
+        models.forEach(m => {
+          let opt = document.createElement('option');
+          opt.value = opt.text = m;
+          modelSelect.add(opt);
+        });
+        modelSelect.disabled = false;
+      };
+
+      modelSelect.onchange = async () => {
+        if(!modelSelect.value) return;
+        const r = await fetch(`/api/vehicles/specs?make=${makeSelect.value}&model=${modelSelect.value}`);
+        const specs = await r.json();
+        selectedEngineSize = specs.engine_size;
+        selectedCylinders = specs.cylinders;
+      };
     }
-    google.maps.event.addDomListener(window, 'load', function() {
-      initAutocomplete();
-      initMap();
-    });
-    form.addEventListener('submit', async (e) => {
+
+    document.getElementById('fuelForm').onsubmit = async (e) => {
       e.preventDefault();
-      resultDiv.style.display = 'none';
-
       const data = {
         source: document.getElementById('source').value,
         destination: document.getElementById('destination').value,
-        vehicle_weight: parseInt(document.getElementById('vehicle_weight').value),
+        engine_size: selectedEngineSize,
+        cylinders: selectedCylinders,
         driving_style: document.getElementById('driving_style').value,
         fuel_type: document.getElementById('fuel_type').value,
-        temperature: parseFloat(document.getElementById('temperature').value)
+        temperature: document.getElementById('temperature').value
       };
 
-      try {
-        const res = await fetch('/predict', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        });
+      const res = await fetch('/predict', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+      const r = await res.json();
+      
+      if(r.error) { alert(r.error); return; }
 
-        const result = await res.json();
-        if (result.error) {
-          alert("Error: " + result.error);
-        } else {
-          resultDiv.style.display = 'block';
-          
-          // Update table values
-          document.getElementById('current_fuel_price').textContent = `₹${result.current_fuel_price} per liter`;
-          document.getElementById('distance').textContent = `${result.distance} km`;
-          document.getElementById('driving_style_display').textContent = result.driving_style;
-          document.getElementById('path_type').textContent = result.path_type;
-          document.getElementById('min_fuel').textContent = `${result.min_fuel} L`;
-          document.getElementById('safe_fuel').textContent = `${result.safe_fuel} L`;
-          document.getElementById('estimated_cost').textContent = `₹${result.estimated_cost}`;
-          
-          // Show/hide terrain alert
-          const terrainAlert = document.getElementById('terrain_alert');
-          if (result.terrain_alert) {
-            terrainAlert.style.display = 'block';
-          } else {
-            terrainAlert.style.display = 'none';
-          }
-          showRouteOnMap(data.source, data.destination);
-        }
-      } catch (err) {
-        alert("Error communicating with server.");
-        console.error(err);
-      }
-    });
-  </script>
-  <!-- Firebase SDKs -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-  <script>
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyC8vPBK2aF5WKI1rXNjhyoWbrq_yW5XooE",
-      authDomain: "fuel-mate-45ef6.firebaseapp.com",
-      projectId: "fuel-mate-45ef6",
-      storageBucket: "fuel-mate-45ef6.appspot.com",
-      messagingSenderId: "286299797200",
-      appId: "1:286299797200:web:f2bc97a4ebb1123a2ed0d5",
-      measurementId: "G-RQK6QR1TEY"
+      document.getElementById('result').style.display = 'block';
+      document.getElementById('res_distance').innerText = r.distance + ' km';
+      document.getElementById('res_min_fuel').innerText = r.min_fuel + ' L';
+      document.getElementById('res_safe_fuel').innerText = r.safe_fuel + ' L';
+      document.getElementById('res_price').innerText = '₹' + r.current_fuel_price + '/L';
+      document.getElementById('res_cost').innerText = '₹' + r.estimated_cost;
+      
+      document.getElementById('terrain_alert').style.display = r.terrain_alert ? 'block' : 'none';
+
+      ds.route({
+        origin: data.source,
+        destination: data.destination,
+        travelMode: 'DRIVING'
+      }, (resp, status) => {
+        if(status === 'OK') dr.setDirections(resp);
+      });
     };
-    firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-    // Auth check for /predict page
-    auth.onAuthStateChanged(function(user) {
-      const userNav = document.getElementById('userNav');
-      if (user) {
-        userNav.innerHTML = `
-          <span class="navbar-text me-3">Welcome, ${user.displayName || user.email}!</span>
-          <a class="nav-btn" href="#" id="logoutBtn">Logout</a>
-        `;
-        document.getElementById('logoutBtn').onclick = function() {
-          auth.signOut().then(() => { window.location.href = '/login'; });
-        };
-      } else {
-        userNav.innerHTML = '';
-      }
-    });
+
+    window.onload = init;
   </script>
 </body>
 </html>

@@ -1,0 +1,1247 @@
+make,model,engine_size,cylinders,mpg
+Aston Martin,Vantage V8,4.0,8,21
+Volkswagen Group Of,Chiron,8.0,16,11
+General Motors,CORVETTE,6.2,8,15
+Ferrari,488 gtb,3.9,8,18
+Ferrari,488 Pista,3.9,8,17
+Ferrari,488 Pista Spider,3.9,8,17
+Ferrari,488 Spider,3.9,8,18
+Ferrari,812 Superfast,6.5,12,13
+Fca Us Llc,124 Spider,1.4,4,29
+Jaguar Land Rover L,F-TYPE Convertible,2.0,4,26
+Jaguar Land Rover L,F-TYPE Convertible,3.0,6,23
+Jaguar Land Rover L,F-TYPE Convertible Manual,3.0,6,19
+Jaguar Land Rover L,F-TYPE Coupe,2.0,4,26
+Jaguar Land Rover L,F-TYPE Coupe,3.0,6,23
+Jaguar Land Rover L,F-TYPE Coupe Manual,3.0,6,19
+Jaguar Land Rover L,F-TYPE S AWD Convertible,3.0,6,21
+Jaguar Land Rover L,F-TYPE S AWD Coupe,3.0,6,21
+Jaguar Land Rover L,F-TYPE S Convertible,3.0,6,22
+Jaguar Land Rover L,F-TYPE S Convertible Manual,3.0,6,18
+Jaguar Land Rover L,F-TYPE S Coupe,3.0,6,22
+Jaguar Land Rover L,F-TYPE S Coupe Manual,3.0,6,18
+Volkswagen Group Of,Aventador Coupe,6.5,12,11
+Volkswagen Group Of,Aventador Roadster,6.5,12,11
+Mazda,MX-5,2.0,4,30
+Nissan,370Z,3.7,6,22
+Nissan,370Z Roadster,3.7,6,21
+Porsche,911 GT2 RS,3.8,6,17
+Porsche,911 GT3,4.0,6,17
+Porsche,911 GT3 Touring,4.0,6,17
+Porsche,Boxster,2.0,4,25
+Porsche,Boxster GTS,2.5,4,22
+Porsche,Boxster S,2.5,4,24
+Porsche,Cayman,2.0,4,25
+Porsche,Cayman GTS,2.5,4,22
+Porsche,Cayman S,2.5,4,24
+Aston Martin,DB11 V12,5.2,12,17
+Aston Martin,DB11 V8,4.0,8,20
+Ferrari,GTC4Lusso,6.3,12,13
+Ferrari,GTC4Lusso T,3.9,8,17
+Ferrari,Portofino,3.9,8,18
+Bmw,COOPER CONVERTIBLE,1.5,3,30
+Bmw,COOPER S CONVERTIBLE,2.0,4,28
+Bmw,JOHN COOPER WORKS CONVERTIBLE,2.0,4,28
+Porsche,911 Carrera,3.0,6,25
+Porsche,911 Carrera 4,3.0,6,24
+Porsche,911 Carrera 4 Cabriolet,3.0,6,24
+Porsche,911 Carrera 4 GTS,3.0,6,22
+Porsche,911 Carrera 4 GTS Cabriolet,3.0,6,22
+Porsche,911 Carrera 4S,3.0,6,24
+Porsche,911 Carrera 4S Cabriolet,3.0,6,24
+Porsche,911 Carrera Cabriolet,3.0,6,24
+Porsche,911 Carrera GTS,3.0,6,23
+Porsche,911 Carrera GTS Cabriolet,3.0,6,22
+Porsche,911 Carrera S,3.0,6,24
+Porsche,911 Carrera S Cabriolet,3.0,6,24
+Porsche,911 Carrera T,3.0,6,22
+Porsche,911 Targa 4,3.0,6,24
+Porsche,911 Targa 4 GTS,3.0,6,22
+Porsche,911 Targa 4S,3.0,6,24
+Porsche,911 Turbo,3.8,6,21
+Porsche,911 Turbo Cabriolet,3.8,6,21
+Porsche,911 Turbo S,3.8,6,21
+Porsche,911 Turbo S Cabriolet,3.8,6,21
+Subaru,BRZ,2.0,4,27
+Toyota,86,2.0,4,27
+Bmw,230i Convertible,2.0,4,27
+Bmw,230i Coupe,2.0,4,28
+Bmw,230i xDrive Convertible,2.0,4,27
+Bmw,230i xDrive Coupe,2.0,4,27
+Bmw,430i Convertible,2.0,4,27
+Bmw,430i xDrive Convertible,2.0,4,26
+Bmw,440i Convertible,3.0,6,24
+Bmw,440i xDrive Convertible,3.0,6,23
+Bmw,M2 Competition,3.0,6,19
+Bmw,M240i Convertible,3.0,6,24
+Bmw,M240i Coupe,3.0,6,24
+Bmw,M240i Coupe M Performance,3.0,6,24
+Bmw,M240i xDrive Convertible,3.0,6,24
+Bmw,M240i xDrive Coupe,3.0,6,24
+Bmw,M240i xDrive Coupe M Performance,3.0,6,24
+Bmw,M4 Convertible,3.0,6,19
+Bmw,M4 Convertible Competition,3.0,6,19
+General Motors,CASCADA,1.6,4,24
+General Motors,CAMARO,2.0,4,25
+General Motors,CAMARO,3.6,6,22
+General Motors,CAMARO,6.2,8,20
+General Motors,SPARK,1.4,4,33
+General Motors,SPARK ACTIV,1.4,4,33
+Ford Motor Company,MUSTANG,2.3,4,25
+Ford Motor Company,MUSTANG,5.0,8,19
+Ford Motor Company,MUSTANG BULLITT,5.0,8,18
+Ford Motor Company,MUSTANG CONVERTIBLE,2.3,4,23
+Ford Motor Company,MUSTANG CONVERTIBLE,5.0,8,18
+Ford Motor Company,MUSTANG PERFORMANCE PACKAGE,2.3,4,23
+Toyota,RC F,5.0,8,19
+Mercedes-Benz,C 300 (convertible),2.0,4,24
+Mercedes-Benz,C 300 (Coupe),2.0,4,25
+Mercedes-Benz,C 300 4MATIC (Coupe),2.0,4,25
+Bmw,COOPER HARDTOP 2 DOOR,1.5,3,30
+Bmw,COOPER HARDTOP 4 DOOR,1.5,3,30
+Bmw,COOPER S HARDTOP 2 DOOR,2.0,4,28
+Bmw,COOPER S HARDTOP 4 DOOR,2.0,4,28
+Bmw,JOHN COOPER WORKS HARDTOP,2.0,4,28
+Volkswagen Group Of,Beetle Convertible,2.0,4,29
+Honda,TLX AWD,3.5,6,23
+Honda,TLX AWD A-SPEC,3.5,6,23
+Honda,TLX FWD,2.4,4,27
+Honda,TLX FWD,3.5,6,24
+Honda,TLX FWD A-SPEC,2.4,4,26
+Honda,TLX FWD A-SPEC,3.5,6,23
+Bmw,430i Coupe,2.0,4,27
+Bmw,430i Gran Coupe,2.0,4,27
+Bmw,430i xDrive Coupe,2.0,4,27
+Bmw,430i xDrive Gran Coupe,2.0,4,27
+Bmw,440i Coupe,3.0,6,25
+Bmw,440i Gran Coupe,3.0,6,25
+Bmw,440i xDrive Coupe,3.0,6,24
+Bmw,440i xDrive Gran Coupe,3.0,6,24
+Bmw,640i Gran Coupe,3.0,6,23
+Bmw,640i xDrive Gran Coupe,3.0,6,22
+Bmw,650i Gran Coupe,4.4,8,21
+Bmw,650i xDrive Gran Coupe,4.4,8,20
+Bmw,Alpina B6 xDrive Gran Coupe,4.4,8,20
+Bmw,M4 Coupe,3.0,6,19
+Bmw,M4 Coupe Competition,3.0,6,19
+Bmw,M4 CS,3.0,6,19
+Bmw,M6 Gran Coupe,4.4,8,16
+General Motors,ATS,2.0,4,25
+General Motors,ATS,3.6,6,23
+General Motors,ATS AWD,2.0,4,24
+General Motors,ATS AWD,3.6,6,21
+General Motors,ATS-V,3.6,6,20
+General Motors,CRUZE,1.4,4,33
+General Motors,CRUZE,1.6,4,37
+General Motors,CRUZE PREMIER,1.4,4,32
+Hyundai,G70 AWD,2.0,4,23
+Hyundai,G70 AWD,3.3,6,20
+Hyundai,G70 RWD,2.0,4,25
+Hyundai,G70 RWD,3.3,6,21
+Hyundai,Accent,1.6,4,32
+Hyundai,Veloster,1.6,4,30
+Hyundai,Veloster,2.0,4,30
+Jaguar Land Rover L,XE,2.0,4,36
+Jaguar Land Rover L,XE,3.0,6,24
+Jaguar Land Rover L,XE AWD,2.0,4,34
+Jaguar Land Rover L,XE AWD,3.0,6,23
+Jaguar Land Rover L,XE AWD,5.0,8,18
+Toyota,GS F,5.0,8,19
+Mazda,CX-3 2WD,2.0,4,31
+Mazda,CX-3 4WD,2.0,4,29
+Mercedes-Benz,AMG CLA 45 4MATIC,2.0,4,26
+Mercedes-Benz,CLA 250,2.0,4,29
+Mercedes-Benz,CLA 250 4MATIC,2.0,4,27
+Nissan,VERSA,1.6,4,34
+Rolls-Royce,Dawn,6.6,12,14
+Subaru,WRX,2.0,4,21
+Subaru,WRX,2.5,4,19
+Toyota,C-HR,2.0,4,29
+Toyota,COROLLA HATCHBACK,2.0,4,36
+Toyota,COROLLA HATCHBACK MANUAL,2.0,4,31
+Toyota,COROLLA HATCHBACK XSE,2.0,4,33
+Toyota,PRIUS c,1.5,4,46
+Volkswagen Group Of,Beetle,2.0,4,29
+Volkswagen Group Of,Jetta,1.4,4,34
+Volvo,S60 AWD,2.0,4,25
+Volvo,S60 FWD,2.0,4,28
+Honda,RLX,3.5,6,28
+Fca Us Llc,Giulia,2.0,4,27
+Fca Us Llc,Giulia,2.9,6,20
+Fca Us Llc,Giulia AWD,2.0,4,26
+Bmw,530i,2.0,4,27
+Bmw,530i xDrive,2.0,4,27
+Bmw,540i,3.0,6,24
+Bmw,540i xDrive,3.0,6,24
+Bmw,M5,4.4,8,17
+Bmw,M5 Competition,4.4,8,17
+Bmw,M550i xDrive,4.4,8,20
+General Motors,LACROSSE,2.5,4,29
+General Motors,LACROSSE,3.6,6,24
+General Motors,LACROSSE AWD,3.6,6,23
+General Motors,REGAL AWD,2.0,4,24
+General Motors,REGAL AWD,3.6,6,22
+General Motors,CTS,2.0,4,25
+General Motors,CTS,3.6,6,23
+General Motors,CTS AWD,2.0,4,24
+General Motors,CTS AWD,3.6,6,21
+General Motors,CTS-V,6.2,8,16
+General Motors,CRUZE HATCHBACK,1.4,4,32
+General Motors,CRUZE HATCHBACK,1.6,4,35
+General Motors,MALIBU,2.0,4,26
+Fca Us Llc,Challenger,3.6,6,23
+Fca Us Llc,Challenger,5.7,8,19
+Fca Us Llc,Challenger,6.4,8,18
+Fca Us Llc,Challenger GT,3.6,6,21
+Fca Us Llc,Challenger SRT,6.2,8,16
+Honda,INSIGHT,1.5,4,52
+Honda,INSIGHT TOURING,1.5,4,48
+Hyundai,Elantra,2.0,4,32
+Hyundai,Elantra SE,2.0,4,33
+Nissan,Q70,3.7,6,21
+Nissan,Q70,5.6,8,19
+Nissan,Q70 AWD,3.7,6,20
+Nissan,Q70 AWD,5.6,8,18
+Jaguar Land Rover L,XF,2.0,4,35
+Jaguar Land Rover L,XF,3.0,6,23
+Jaguar Land Rover L,XF AWD,2.0,4,34
+Jaguar Land Rover L,XF AWD,3.0,6,23
+Kia,Forte,2.0,4,34
+Kia,Forte FE,2.0,4,35
+Kia,Stinger AWD,2.0,4,24
+Kia,Stinger AWD,3.3,6,21
+Kia,Stinger RWD,2.0,4,25
+Kia,Stinger RWD,3.3,6,21
+Maserati,Ghibli  S RWD,3.0,6,19
+Maserati,Ghibli V6 Rear Wheel Drive (RWD),3.0,6,19
+Maserati,Ghibli V6 SQ4 AWD,3.0,6,19
+Mercedes-Benz,E 300,2.0,4,25
+Mercedes-Benz,E 300 4MATIC,2.0,4,24
+Bmw,COOPER CLUBMAN,1.5,3,27
+Bmw,COOPER CLUBMAN ALL4,1.5,3,26
+Bmw,COOPER COUNTRYMAN,1.5,3,27
+Bmw,COOPER COUNTRYMAN ALL4,1.5,3,25
+Bmw,COOPER S CLUBMAN,2.0,4,27
+Bmw,COOPER S CLUBMAN ALL4,2.0,4,26
+Bmw,COOPER S COUNTRYMAN,2.0,4,27
+Bmw,COOPER S COUNTRYMAN ALL4,2.0,4,26
+Bmw,JCW COUNTRYMAN ALL4,2.0,4,25
+Bmw,JOHN COOPER WORKS CLUBMAN ALL4,2.0,4,26
+Nissan,SENTRA,1.6,4,29
+Nissan,SENTRA,1.8,4,32
+Nissan,SENTRA NISMO,1.6,4,27
+Rolls-Royce,Wraith,6.6,12,14
+Subaru,IMPREZA 4-Door,2.0,4,32
+Subaru,IMPREZA 4-Door SPORT,2.0,4,30
+Subaru,LEGACY,2.5,4,29
+Subaru,LEGACY,3.6,6,23
+Toyota,AVALON,3.5,6,25
+Toyota,AVALON HYBRID,2.5,4,43
+Toyota,AVALON HYBRID XLE,2.5,4,44
+Toyota,AVALON XLE,3.5,6,26
+Toyota,CAMRY,2.5,4,34
+Toyota,CAMRY,3.5,6,26
+Toyota,CAMRY LE/SE,2.5,4,32
+Toyota,CAMRY XLE/XSE,2.5,4,32
+Toyota,CAMRY XSE,3.5,6,26
+Toyota,COROLLA,1.8,4,32
+Toyota,COROLLA LE ECO,1.8,4,34
+Volkswagen Group Of,Passat,2.0,4,29
+Volvo,S90 AWD,2.0,4,25
+Volvo,S90 FWD,2.0,4,27
+Bmw,330i xDrive Gran Turismo,2.0,4,27
+Bmw,340i xDrive Gran Turismo,3.0,6,23
+Bmw,640i xDrive Gran Turismo,3.0,6,23
+Bmw,740i,3.0,6,24
+Bmw,740i xDrive,3.0,6,23
+Bmw,750i,4.4,8,21
+Bmw,750i xDrive,4.4,8,20
+Bmw,Alpina B7 xDrive,4.4,8,20
+Bmw,M760i xDrive,6.6,12,16
+General Motors,XTS,3.6,6,22
+General Motors,XTS AWD,3.6,6,20
+General Motors,IMPALA,2.5,4,25
+General Motors,IMPALA,3.6,6,22
+Fca Us Llc,300,3.6,6,23
+Fca Us Llc,300,5.7,8,19
+Fca Us Llc,300 AWD,3.6,6,21
+Fca Us Llc,Charger,3.6,6,23
+Fca Us Llc,Charger,5.7,8,19
+Fca Us Llc,Charger,6.4,8,18
+Fca Us Llc,Charger AWD,3.6,6,21
+Fca Us Llc,Charger SRT,6.2,8,16
+Hyundai,G80 AWD,3.3,6,20
+Hyundai,G80 AWD,3.8,6,20
+Hyundai,G80 AWD,5.0,8,18
+Hyundai,G80 RWD,3.3,6,20
+Hyundai,G80 RWD,3.8,6,21
+Hyundai,G80 RWD,5.0,8,19
+Hyundai,G90 AWD,3.3,6,20
+Hyundai,G90 AWD,5.0,8,18
+Hyundai,G90 RWD,3.3,6,20
+Hyundai,G90 RWD,5.0,8,19
+Hyundai,Ioniq,1.6,4,55
+Hyundai,Ioniq Blue,1.6,4,58
+Hyundai,Sonata,1.6,4,31
+Hyundai,Sonata,2.0,4,26
+Hyundai,Sonata,2.4,4,28
+Hyundai,Sonata SE,2.4,4,29
+Jaguar Land Rover L,XJ,3.0,6,21
+Jaguar Land Rover L,XJ,5.0,8,18
+Jaguar Land Rover L,XJ AWD,3.0,6,20
+Jaguar Land Rover L,XJL,3.0,6,21
+Jaguar Land Rover L,XJL,5.0,8,18
+Jaguar Land Rover L,XJL AWD,3.0,6,20
+Kia,Cadenza,3.3,6,23
+Kia,Optima,1.6,4,31
+Kia,Optima,2.0,4,24
+Kia,Optima,2.4,4,27
+Kia,Optima FE,2.4,4,29
+Maserati,QUATTROPORTE S,3.0,6,18
+Maserati,QUATTROPORTE SQ4 V6,3.0,6,18
+Maserati,QUATTROPORTE V8,3.8,8,17
+Rolls-Royce,Ghost,6.6,12,14
+Rolls-Royce,Ghost EWB,6.6,12,14
+Bmw,330i xDrive Sports Wagon,2.0,4,27
+General Motors,REGAL TOUR X AWD,2.0,4,24
+Fca Us Llc,500L,1.4,4,25
+Honda,FIT,1.5,4,36
+Honda,HR-V AWD,1.8,4,29
+Honda,HR-V FWD,1.8,4,30
+Kia,Soul,1.6,4,28
+Kia,Soul,2.0,4,27
+Subaru,IMPREZA 5-Door,2.0,4,31
+Subaru,IMPREZA 5-Door SPORT,2.0,4,30
+Volvo,V60 AWD,2.0,4,25
+Volvo,V60 FWD,2.0,4,28
+Jaguar Land Rover L,XF Sportbrake AWD,3.0,6,21
+Mercedes-Benz,AMG GLA 45 4MATIC,2.0,4,25
+Volvo,V90 AWD,2.0,4,25
+Volvo,V90 CC AWD,2.0,4,24
+Volvo,V90 FWD,2.0,4,27
+General Motors,COLORADO 2WD,2.5,4,22
+General Motors,COLORADO 2WD,2.8,4,23
+General Motors,COLORADO 2WD,3.6,6,20
+General Motors,CANYON 2WD,2.5,4,22
+General Motors,CANYON 2WD,2.8,4,23
+General Motors,CANYON 2WD,3.6,6,20
+Honda,RIDGELINE FWD,3.5,6,22
+Nissan,FRONTIER 2WD,2.5,4,19
+Nissan,FRONTIER 2WD,4.0,6,19
+Nissan,FRONTIER 2WD FFV,4.0,6,18
+General Motors,COLORADO 4WD,2.5,4,21
+General Motors,COLORADO 4WD,2.8,4,22
+General Motors,COLORADO 4WD,3.6,6,19
+General Motors,COLORADO ZR2 4WD,2.8,4,19
+General Motors,COLORADO ZR2 4WD,3.6,6,17
+General Motors,CANYON 4WD,2.5,4,21
+General Motors,CANYON 4WD,2.8,4,22
+General Motors,CANYON 4WD,3.6,6,19
+Nissan,FRONTIER 4WD,4.0,6,17
+Nissan,FRONTIER 4WD FFV,4.0,6,17
+General Motors,C10 SILVERADO 2WD,5.3,8,19
+General Motors,C15 SILVERADO LD 2WD,5.3,8,17
+General Motors,C10 SIERRA 2WD,5.3,8,19
+General Motors,C15 SIERRA LTD 2WD,5.3,8,17
+Fca Us Llc,1500 4X2,5.7,8,19
+Fca Us Llc,1500 Classic 4X2,3.6,6,20
+Fca Us Llc,1500 Classic 4X2,5.7,8,17
+Toyota,TUNDRA 2WD,4.6,8,16
+Toyota,TUNDRA 2WD,5.7,8,15
+General Motors,K10 SILVERADO 4WD,5.3,8,18
+General Motors,K10 SILVERADO 4WD,6.2,8,17
+General Motors,K10 SILVERADO 4WD TRAILBOSS,5.3,8,17
+General Motors,K15 SILVERADO LD 4WD,5.3,8,17
+General Motors,K10 SIERRA 4WD,5.3,8,17
+General Motors,K10 SIERRA 4WD,6.2,8,17
+General Motors,K10 SIERRA 4WD AT4,5.3,8,17
+General Motors,K10 SIERRA 4WD AT4,6.2,8,17
+General Motors,K15 SIERRA LTD 4WD,5.3,8,17
+Honda,RIDGELINE AWD,3.5,6,21
+Fca Us Llc,1500 4X4,5.7,8,19
+Fca Us Llc,1500 Classic 4X4,3.6,6,19
+Fca Us Llc,1500 Classic 4X4,5.7,8,17
+Toyota,TUNDRA 4WD,4.6,8,16
+Toyota,TUNDRA 4WD,5.7,8,14
+Toyota,TUNDRA 4WD FFV,5.7,8,15
+General Motors,XTS HEARSE,3.6,6,17
+General Motors,XTS LIMO,3.6,6,17
+Ford Motor Company,Transit Connect Van 2WD,2.0,4,25
+Ford Motor Company,Transit Connect Van 2WD,2.5,4,22
+Ford Motor Company,TRANSIT CONNECT VAN FFV,2.0,4,25
+Ford Motor Company,TRANSIT CONNECT WAGON LWB FFV,2.0,4,26
+Ford Motor Company,Transit Connect Wagon LWB FWD,2.0,4,26
+Ford Motor Company,Transit Connect Wagon LWB FWD,2.5,4,22
+Nissan,NV200 Cargo Van,2.0,4,25
+Ford Motor Company,MKT HEARSE AWD,3.5,6,16
+Ford Motor Company,MKT LIMO AWD,3.5,6,15
+Ford Motor Company,MKT LIVERY AWD,3.7,6,18
+General Motors,COLORADO CAB CHASSIS 2WD,3.6,6,15
+General Motors,CANYON CAB CHASSIS 2WD,3.6,6,15
+Fca Us Llc,Pacifica,3.6,6,22
+Fca Us Llc,Grand Caravan,3.6,6,20
+Honda,ODYSSEY FWD,3.5,6,22
+Kia,Sedona,3.3,6,21
+Toyota,SIENNA,3.5,6,22
+Toyota,SIENNA AWD,3.5,6,20
+Honda,MDX FWD,3.5,6,23
+Honda,RDX FWD,2.0,4,24
+Honda,RDX FWD A-SPEC,2.0,4,24
+Fca Us Llc,Stelvio,2.0,4,25
+General Motors,ENCORE,1.4,4,28
+General Motors,ENVISION FWD,2.5,4,25
+General Motors,XT5,3.6,6,22
+General Motors,EQUINOX FWD,1.5,4,28
+General Motors,EQUINOX FWD,1.6,4,32
+General Motors,EQUINOX FWD,2.0,4,25
+General Motors,TERRAIN FWD,1.5,4,28
+General Motors,TERRAIN FWD,1.6,4,32
+General Motors,TERRAIN FWD,2.0,4,24
+Honda,PILOT FWD,3.5,6,22
+Hyundai,Kona FWD,1.6,4,30
+Hyundai,Kona FWD,2.0,4,30
+Hyundai,Santa Fe FWD,2.0,4,22
+Hyundai,Santa Fe FWD,2.4,4,25
+Hyundai,Santa Fe XL FWD,3.3,6,21
+Hyundai,Santa Fe XL Ultimate FWD,3.3,6,20
+Nissan,QX50,2.0,4,27
+Nissan,QX60 FWD,3.5,6,22
+Fca Us Llc,Cherokee FWD,2.0,4,26
+Fca Us Llc,Cherokee FWD,2.4,4,25
+Fca Us Llc,Cherokee FWD,3.2,6,23
+Fca Us Llc,Compass 4X2,2.4,4,25
+Kia,Sorento FWD,2.4,4,25
+Kia,Sorento FWD,3.3,6,22
+Kia,Sportage FE FWD,2.4,4,25
+Kia,Sportage FWD,2.0,4,23
+Kia,Sportage FWD,2.4,4,25
+Toyota,NX 300,2.0,4,25
+Toyota,RX 350,3.5,6,23
+Ford Motor Company,MKC  FWD,2.0,4,23
+Mercedes-Benz,GLA 250,2.0,4,27
+Mercedes-Benz,GLC 300,2.0,4,24
+Mitsubishi Motors Co,ECLIPSE CROSS 2WD,1.5,4,26
+Mitsubishi Motors Co,ECLIPSE CROSS ES 2WD,1.5,4,27
+Mitsubishi Motors Co,OUTLANDER 2WD,2.4,4,27
+Volvo,XC40 FWD,2.0,4,27
+Volvo,XC60 FWD,2.0,4,24
+Honda,MDX AWD,3.0,6,27
+Honda,MDX AWD,3.5,6,22
+Honda,MDX AWD A-spec,3.5,6,21
+Honda,RDX AWD,2.0,4,23
+Honda,RDX AWD A-SPEC,2.0,4,23
+Fca Us Llc,Stelvio AWD,2.0,4,24
+Fca Us Llc,Stelvio AWD,2.9,6,19
+Bmw,X3 M40i,3.0,6,23
+Bmw,X3 sDrive30i,2.0,4,26
+Bmw,X3 xDrive30i,2.0,4,25
+Bmw,X4 M40i,3.0,6,23
+Bmw,X4 xDrive30i,2.0,4,25
+General Motors,ENCORE AWD,1.4,4,27
+General Motors,ENVISION AWD,2.0,4,22
+General Motors,ENVISION AWD,2.5,4,24
+General Motors,XT5 AWD,3.6,6,21
+General Motors,EQUINOX AWD,1.5,4,27
+General Motors,EQUINOX AWD,1.6,4,32
+General Motors,EQUINOX AWD,2.0,4,24
+General Motors,TERRAIN AWD,1.5,4,26
+General Motors,TERRAIN AWD,1.6,4,32
+General Motors,TERRAIN AWD,2.0,4,23
+Honda,PILOT AWD,3.5,6,21
+Hyundai,Kona AWD,1.6,4,27
+Hyundai,Kona AWD,2.0,4,27
+Hyundai,Santa Fe AWD,2.0,4,21
+Hyundai,Santa Fe AWD,2.4,4,23
+Hyundai,Santa Fe XL AWD,3.3,6,20
+Hyundai,Santa Fe XL Ultimate AWD,3.3,6,19
+Nissan,QX50 AWD,2.0,4,26
+Nissan,QX60 AWD,3.5,6,22
+Jaguar Land Rover L,F-Pace,2.0,4,29
+Jaguar Land Rover L,F-Pace,3.0,6,20
+Jaguar Land Rover L,Jaguar E-Pace P250,2.0,4,24
+Jaguar Land Rover L,Jaguar E-Pace P300,2.0,4,23
+Fca Us Llc,Cherokee 4X4,2.0,4,24
+Fca Us Llc,Cherokee 4X4,2.4,4,24
+Fca Us Llc,Cherokee 4X4,3.2,6,22
+Fca Us Llc,Cherokee 4x4 Active Drive II,2.0,4,23
+Fca Us Llc,Cherokee 4x4 Active Drive II,3.2,6,21
+Fca Us Llc,Cherokee Trailhawk 4X4,2.0,4,22
+Fca Us Llc,Cherokee Trailhawk 4X4,3.2,6,21
+Fca Us Llc,Compass 4X4,2.4,4,25
+Kia,Sorento AWD,2.4,4,23
+Kia,Sorento AWD,3.3,6,21
+Kia,Sportage AWD,2.0,4,21
+Kia,Sportage AWD,2.4,4,23
+Kia,Sportage FE AWD,2.4,4,22
+Jaguar Land Rover L,Discovery Sport Si4,2.0,4,22
+Jaguar Land Rover L,Range Rover Evoque 237HP,2.0,4,25
+Jaguar Land Rover L,Range Rover Evoque 286HP,2.0,4,24
+Jaguar Land Rover L,Range Rover Evoque Cabriolet,2.0,4,24
+Jaguar Land Rover L,Range Rover Velar,2.0,4,28
+Jaguar Land Rover L,Range Rover Velar,3.0,6,20
+Toyota,NX 300 AWD,2.0,4,24
+Toyota,NX 300 AWD F SPORT,2.0,4,24
+Toyota,NX 300h AWD,2.5,4,31
+Toyota,RX 350 AWD,3.5,6,22
+Ford Motor Company,MKC  AWD,2.0,4,22
+Ford Motor Company,MKC  AWD,2.3,4,20
+Mercedes-Benz,GLA 250 4MATIC,2.0,4,26
+Mercedes-Benz,GLC 300 4MATIC,2.0,4,24
+Mercedes-Benz,GLC 300 4MATIC (Coupe),2.0,4,23
+Mitsubishi Motors Co,ECLIPSE CROSS 4WD,1.5,4,25
+Mitsubishi Motors Co,ECLIPSE CROSS ES 4WD,1.5,4,26
+Mitsubishi Motors Co,OUTLANDER 4WD,2.4,4,26
+Mitsubishi Motors Co,OUTLANDER 4WD,3.0,6,22
+Subaru,CROSSTREK AWD,2.0,4,29
+Subaru,FORESTER AWD,2.5,4,29
+Subaru,OUTBACK AWD,2.5,4,28
+Subaru,OUTBACK AWD,3.6,6,22
+Volvo,XC40 AWD,2.0,4,26
+Volvo,XC60 AWD,2.0,4,22
+Bmw,X6 sDrive35i,3.0,6,20
+General Motors,ENCLAVE,3.6,6,21
+General Motors,ESCALADE 2WD,6.2,8,17
+General Motors,C1500 SUBURBAN 2WD,5.3,8,18
+General Motors,C1500 SUBURBAN 2WD,6.2,8,17
+General Motors,C1500 TAHOE 2WD,5.3,8,18
+General Motors,C1500 TAHOE 2WD,6.2,8,17
+General Motors,TRAVERSE FWD,2.0,4,22
+General Motors,TRAVERSE FWD,3.6,6,21
+Fca Us Llc,Durango RWD,3.6,6,21
+Fca Us Llc,Durango RWD,5.7,8,17
+Ford Motor Company,Flex FWD,3.5,6,19
+General Motors,ACADIA FWD,2.5,4,23
+General Motors,ACADIA FWD,3.6,6,21
+General Motors,C1500 YUKON 2WD,5.3,8,18
+General Motors,C1500 YUKON 2WD,6.2,8,17
+General Motors,C1500 YUKON XL 2WD,5.3,8,18
+General Motors,C1500 YUKON XL 2WD,6.2,8,17
+Nissan,QX80 2WD,5.6,8,16
+Fca Us Llc,Grand Cherokee 4X2,3.6,6,21
+Ford Motor Company,MKT FWD,3.7,6,19
+Toyota,4RUNNER 2WD,4.0,6,18
+Toyota,SEQUOIA 2WD,5.7,8,15
+Volvo,XC90 FWD,2.0,4,24
+Bmw,X6 M,4.4,8,16
+Bmw,X6 xDrive35i,3.0,6,20
+Bmw,X6 xDrive50i,4.4,8,19
+General Motors,ENCLAVE AWD,3.6,6,20
+General Motors,ESCALADE 4WD,6.2,8,17
+General Motors,K1500 SUBURBAN 4WD,5.3,8,16
+General Motors,K1500 SUBURBAN 4WD,6.2,8,16
+General Motors,K1500 TAHOE 4WD,5.3,8,17
+General Motors,K1500 TAHOE 4WD,6.2,8,17
+General Motors,TRAVERSE AWD,3.6,6,20
+Fca Us Llc,Durango AWD,3.6,6,21
+Fca Us Llc,Durango AWD,5.7,8,17
+Ford Motor Company,FLEX AWD,3.5,6,17
+General Motors,ACADIA AWD,2.5,4,22
+General Motors,ACADIA AWD,3.6,6,20
+General Motors,K1500 YUKON 4WD,5.3,8,17
+General Motors,K1500 YUKON 4WD,6.2,8,17
+General Motors,K1500 YUKON XL 4WD,5.3,8,16
+General Motors,K1500 YUKON XL 4WD,6.2,8,16
+Nissan,QX80 4WD,5.6,8,15
+Fca Us Llc,Grand Cherokee 4X4,3.6,6,21
+Fca Us Llc,Grand Cherokee 4X4,5.7,8,17
+Jaguar Land Rover L,Discovery,3.0,6,23
+Jaguar Land Rover L,Range Rover,5.0,8,18
+Jaguar Land Rover L,Range Rover LWB,5.0,8,18
+Jaguar Land Rover L,Range Rover LWB SVA,5.0,8,15
+Jaguar Land Rover L,Range Rover Sport,3.0,6,24
+Jaguar Land Rover L,Range Rover Sport,5.0,8,19
+Jaguar Land Rover L,Range Rover SVA,3.0,6,24
+Jaguar Land Rover L,Range Rover SVA,5.0,8,16
+Toyota,GX 460,4.6,8,16
+Toyota,LX 570,5.7,8,15
+Ford Motor Company,MKT AWD,3.5,6,17
+Maserati,LEVANTE,3.0,8,17
+Maserati,LEVANTE S,3.0,8,17
+Mercedes-Benz,GLE 400 4MATIC,3.0,6,20
+Mercedes-Benz,GLS 450 4MATIC,3.0,6,18
+Subaru,ASCENT,2.4,4,23
+Subaru,ASCENT LIMITED/TOURING,2.4,4,22
+Toyota,4RUNNER 4WD,4.0,6,18
+Toyota,LAND CRUISER WAGON 4WD,5.7,8,15
+Toyota,SEQUOIA 4WD,5.7,8,14
+Volvo,XC90 AWD,2.0,4,22
+Honda,ADX AWD,1.5,4,27
+Honda,ADX FWD,1.5,4,28
+Honda,INTEGRA,1.5,4,33
+Honda,INTEGRA,2.0,4,24
+Honda,INTEGRA A-SPEC,1.5,4,32
+Honda,MDX AWD Type-S,3.0,6,19
+Honda,TLX AWD A-SPEC,2.0,4,24
+Honda,TLX FWD,2.0,4,25
+Honda,TLX Type-S,3.0,6,21
+Fca Us Llc,Tonale AWD,2.0,4,24
+Aston Martin,DB12 V8,4.0,8,17
+Aston Martin,DBX 707,4.0,8,17
+Aston Martin,Vanquish,5.2,12,16
+Aston Martin,Vantage,4.0,8,18
+Volkswagen Group Of,A3 quattro,2.0,4,28
+Volkswagen Group Of,A4 allroad quattro,2.0,4,26
+Volkswagen Group Of,A4 quattro,2.0,4,29
+Volkswagen Group Of,A4 S line quattro,2.0,4,26
+Volkswagen Group Of,A5 quattro,2.0,4,26
+Volkswagen Group Of,A5 Sportback quattro,2.0,4,29
+Volkswagen Group Of,A5 Sportback S line quattro,2.0,4,26
+Volkswagen Group Of,A6 allroad quattro,3.0,6,25
+Volkswagen Group Of,A6 quattro,2.0,4,26
+Volkswagen Group Of,A6 quattro,3.0,6,25
+Volkswagen Group Of,A7 quattro,3.0,6,25
+Volkswagen Group Of,A8 quattro,3.0,6,22
+Volkswagen Group Of,Q3,2.0,4,25
+Volkswagen Group Of,Q3 S line,2.0,4,23
+Volkswagen Group Of,Q5 quattro,2.0,4,26
+Volkswagen Group Of,Q5 S line quattro,2.0,4,25
+Volkswagen Group Of,Q5 Sportback S line quattro,2.0,4,25
+Volkswagen Group Of,Q5 Sportback TFSI quattro,2.0,4,25
+Volkswagen Group Of,Q5 TFSI quattro,2.0,4,25
+Volkswagen Group Of,Q7,2.0,4,22
+Volkswagen Group Of,Q7,3.0,6,20
+Volkswagen Group Of,Q8 quattro,3.0,6,19
+Volkswagen Group Of,RS 3,2.5,5,23
+Volkswagen Group Of,RS 5 Sportback,2.9,6,20
+Volkswagen Group Of,RS 6 Avant,4.0,8,17
+Volkswagen Group Of,RS 7,4.0,8,17
+Volkswagen Group Of,RS Q8 Performance,4.0,8,16
+Volkswagen Group Of,S3,2.0,4,26
+Volkswagen Group Of,S4,3.0,6,24
+Volkswagen Group Of,S5,3.0,6,22
+Volkswagen Group Of,S5 Sportback,3.0,6,23
+Volkswagen Group Of,S6,2.9,6,22
+Volkswagen Group Of,S7,2.9,6,22
+Volkswagen Group Of,S8,4.0,8,18
+Volkswagen Group Of,SQ5,3.0,6,21
+Volkswagen Group Of,SQ5 Sportback,3.0,6,21
+Volkswagen Group Of,SQ7,4.0,8,17
+Volkswagen Group Of,SQ8,4.0,8,17
+Volkswagen Group Of,Bentayga,4.0,8,16
+Volkswagen Group Of,Bentayga EWB,4.0,8,16
+Bmw,228 xDrive Gran Coupe,2.0,4,30
+Bmw,330i Sedan,2.0,4,31
+Bmw,330i xDrive Sedan,2.0,4,29
+Bmw,530i Sedan,2.0,4,31
+Bmw,530i xDrive Sedan,2.0,4,30
+Bmw,540i xDrive Sedan,3.0,6,28
+Bmw,740i Sedan,3.0,6,28
+Bmw,740i xDrive Sedan,3.0,6,27
+Bmw,760i xDrive Sedan,4.4,8,20
+Bmw,840i Convertible,3.0,6,24
+Bmw,840i Coupe,3.0,6,24
+Bmw,840i Gran Coupe,3.0,6,24
+Bmw,840i xDrive Convertible,3.0,6,24
+Bmw,840i xDrive Coupe,3.0,6,24
+Bmw,840i xDrive Gran Coupe,3.0,6,24
+Bmw,ALPINA B8 Gran Coupe,4.4,8,19
+Bmw,M2 Coupe,3.0,6,19
+Bmw,M235 xDrive Gran Coupe,2.0,4,27
+Bmw,M3 Competition M xDrive Sedan,3.0,6,18
+Bmw,M3 Competition Sedan,3.0,6,19
+Bmw,M3 Sedan,3.0,6,19
+Bmw,M340i Sedan,3.0,4,29
+Bmw,M340i xDrive Sedan,3.0,4,29
+Bmw,M4 Competition Coupe,3.0,6,19
+Bmw,M4 Competition M xDrive Coupe,3.0,6,18
+Bmw,M4 CS Coupe,3.0,6,18
+Bmw,M440i Convertible,3.0,4,29
+Bmw,M440i Coupe,3.0,4,30
+Bmw,M440i Gran Coupe,3.0,4,28
+Bmw,M440i xDrive Convertible,3.0,4,28
+Bmw,M440i xDrive Coupe,3.0,4,29
+Bmw,M440i xDrive Gran Coupe,3.0,4,27
+Bmw,M4CompetitionMxDriveConvertible,3.0,6,18
+Bmw,M8 Competition Convertible,4.4,8,17
+Bmw,M8 Competition Coupe,4.4,8,17
+Bmw,M8 Competition Gran Coupe,4.4,8,17
+Bmw,M850i xDrive Convertible,4.4,8,19
+Bmw,M850i xDrive Coupe,4.4,8,19
+Bmw,M850i xDrive Gran Coupe,4.4,8,19
+Bmw,X1 M35i,2.0,4,26
+Bmw,X1 xDrive28i,2.0,4,28
+Bmw,X2 M35i,2.0,4,26
+Bmw,X2 xDrive28i,2.0,4,28
+Bmw,X3 M50i xDrive,3.0,4,27
+Bmw,X4 M,3.0,6,17
+Bmw,X4 M Competition,3.0,6,17
+Bmw,X5 M Competition,4.4,8,15
+Bmw,X5 M60i xDrive,4.4,8,19
+Bmw,X5 sDrive40i,3.0,6,25
+Bmw,X5 xDrive40i,3.0,6,25
+Bmw,X6 M Competition,4.4,8,15
+Bmw,X6 M60i xDrive,4.4,8,19
+Bmw,X6 xDrive40i,3.0,6,24
+Bmw,X7 M60i xDrive,4.4,8,18
+Bmw,X7 xDrive40i,3.0,6,22
+Bmw,Z4 M40i,3.0,6,25
+Bmw,Z4 sDrive30i,2.0,4,28
+Volkswagen Group Of,Mistral,8.0,16,9
+General Motors,ENCLAVE AWD,2.5,4,21
+General Motors,ENCLAVE FWD,2.5,4,23
+General Motors,ENCORE GX AWD,1.3,3,27
+General Motors,ENCORE GX FWD,1.3,3,30
+General Motors,ENCORE GX FWD,1.2,3,30
+General Motors,ENVISTA,1.2,3,30
+General Motors,CT4,2.7,4,25
+General Motors,CT4 AWD,2.0,4,25
+General Motors,CT4 AWD,2.7,4,24
+General Motors,CT4 V,2.7,4,23
+General Motors,CT4 V,3.6,6,19
+General Motors,CT4 V AWD,2.7,4,23
+General Motors,CT5,3.0,6,22
+General Motors,CT5,2.0,4,26
+General Motors,CT5 AWD,3.0,6,21
+General Motors,CT5 AWD,2.0,4,25
+General Motors,CT5 V,3.0,6,21
+General Motors,CT5 V,6.2,8,15
+General Motors,CT5 V AWD,3.0,6,20
+General Motors,ESCALADE V AWD,6.2,8,13
+General Motors,XT4 AWD,2.0,4,25
+General Motors,XT4 FWD,2.0,4,26
+General Motors,XT5 AWD,2.0,4,23
+General Motors,XT5 FWD,2.0,4,24
+General Motors,XT5 FWD,3.6,6,21
+General Motors,XT6 AWD,2.0,4,23
+General Motors,XT6 AWD,3.6,6,20
+General Motors,XT6 FWD,2.0,4,23
+General Motors,XT6 FWD,3.6,6,21
+General Motors,BLAZER AWD,2.0,4,24
+General Motors,BLAZER AWD,3.6,6,21
+General Motors,BLAZER FWD,2.0,4,25
+General Motors,BLAZER FWD,3.6,6,22
+General Motors,COLORADO 2WD,2.7,4,20
+General Motors,COLORADO 4WD,2.7,4,19
+General Motors,COLORADO 4WD MUD TERRAIN TIRES,2.7,4,18
+General Motors,COLORADO ZR2 4WD,2.7,4,17
+General Motors,COLORADO ZR2 BISON 4WD,2.7,4,16
+General Motors,CORVETTE E-RAY,6.2,8,19
+General Motors,CORVETTE Z06,5.5,8,14
+General Motors,CORVETTE Z06 CARBON AERO,5.5,8,14
+General Motors,CORVETTE ZR1,5.5,8,14
+General Motors,MALIBU,1.5,4,31
+General Motors,SILVERADO 2WD,3.0,6,26
+General Motors,SILVERADO 2WD,2.7,4,19
+General Motors,SILVERADO 2WD,5.3,8,18
+General Motors,SILVERADO 2WD CAB CHASSIS,5.3,8,16
+General Motors,SILVERADO 4WD,3.0,6,24
+General Motors,SILVERADO 4WD,2.7,4,18
+General Motors,SILVERADO 4WD,5.3,8,17
+General Motors,SILVERADO 4WD,6.2,8,17
+General Motors,SILVERADO 4WD CAB CHASSIS,5.3,8,15
+General Motors,SILVERADO 4WD MUD TERRAIN TIRES,3.0,6,23
+General Motors,SILVERADO 4WD MUD TERRAIN TIRES,2.7,4,16
+General Motors,SILVERADO 4WD MUD TERRAIN TIRES,5.3,8,17
+General Motors,SILVERADO 4WD MUD TERRAIN TIRES,6.2,8,15
+General Motors,SILVERADO 4WD ZR2,3.0,6,21
+General Motors,SILVERADO 4WD ZR2,6.2,8,15
+General Motors,SUBURBAN 2WD,6.2,8,16
+General Motors,SUBURBAN 2WD,5.3,8,17
+General Motors,SUBURBAN 2WD,3.0,6,23
+General Motors,SUBURBAN 4WD,6.2,8,16
+General Motors,SUBURBAN 4WD,5.3,8,16
+General Motors,SUBURBAN 4WD,3.0,6,22
+General Motors,TAHOE 2WD,6.2,8,17
+General Motors,TAHOE 2WD,5.3,8,17
+General Motors,TAHOE 2WD,3.0,6,24
+General Motors,TAHOE 4WD,6.2,8,16
+General Motors,TAHOE 4WD,5.3,8,17
+General Motors,TAHOE 4WD,3.0,6,22
+General Motors,TRAILBLAZER AWD,1.3,3,27
+General Motors,TRAILBLAZER FWD,1.3,3,31
+General Motors,TRAILBLAZER FWD,1.2,3,30
+General Motors,TRAVERSE AWD,2.5,4,21
+General Motors,TRAVERSE FWD,2.5,4,23
+General Motors,TRAX,1.2,3,30
+Fca Us Llc,Pacifica AWD,3.6,6,20
+Fca Us Llc,Voyager,3.6,6,22
+Fca Us Llc,Durango SRT AWD,6.2,8,13
+Fca Us Llc,Hornet AWD,2.0,4,24
+Ferrari,F167 ABA,6.5,12,14
+Ferrari,Ferrari Daytona SP3,6.5,12,13
+Ferrari,Roma Spider,3.9,8,19
+Ford Motor Company,BRONCO 4WD,2.3,4,20
+Ford Motor Company,BRONCO 4WD,2.7,6,18
+Ford Motor Company,BRONCO BADLANDS 4WD,2.3,4,18
+Ford Motor Company,BRONCO OUTER BANKS 4WD,2.7,6,20
+Ford Motor Company,BRONCO RAPTOR 4WD,3.0,6,15
+Ford Motor Company,BRONCO SASQUATCH 4WD,2.3,4,18
+Ford Motor Company,BRONCO SPORT 4WD,1.5,3,27
+Ford Motor Company,BRONCO SPORT 4WD,2.0,4,23
+Ford Motor Company,BRONCO SPORT SASQUATCH,1.5,3,24
+Ford Motor Company,ESCAPE AWD,2.0,4,26
+Ford Motor Company,ESCAPE AWD,1.5,3,28
+Ford Motor Company,ESCAPE AWD HEV,2.5,4,39
+Ford Motor Company,ESCAPE FWD,1.5,3,30
+Ford Motor Company,ESCAPE FWD HEV,2.5,4,39
+Ford Motor Company,EXPEDITION 2WD,3.5,6,19
+Ford Motor Company,EXPEDITION 4WD,3.5,6,18
+Ford Motor Company,EXPLORER AWD,3.0,6,20
+Ford Motor Company,EXPLORER AWD,2.3,4,23
+Ford Motor Company,EXPLORER RWD,3.0,6,21
+Ford Motor Company,EXPLORER RWD,2.3,4,24
+Ford Motor Company,F150 PICKUP 2WD,3.5,6,20
+Ford Motor Company,F150 PICKUP 2WD,2.7,6,21
+Ford Motor Company,F150 PICKUP 2WD,5.0,8,19
+Ford Motor Company,F150 PICKUP 4WD,3.5,6,19
+Ford Motor Company,F150 PICKUP 4WD,2.7,6,20
+Ford Motor Company,F150 PICKUP 4WD,5.0,8,19
+Ford Motor Company,F150 PICKUP 4WD HEV,3.5,6,23
+Ford Motor Company,F150 PICKUP TREMOR 4WD,3.5,6,18
+Ford Motor Company,F150 PICKUP TREMOR 4WD,5.0,8,17
+Ford Motor Company,F150 RAPTOR 4WD,3.5,6,16
+Ford Motor Company,F150 RAPTOR R 4WD,5.2,8,12
+Ford Motor Company,MAVERICK AWD,2.0,4,25
+Ford Motor Company,MAVERICK HEV AWD,2.5,4,37
+Ford Motor Company,MAVERICK HEV FWD,2.5,4,38
+Ford Motor Company,MAVERICK LOBO AWD,2.0,4,24
+Ford Motor Company,MAVERICK TREMOR AWD,2.0,4,23
+Ford Motor Company,MUSTANG DARK HORSE,5.0,8,17
+Ford Motor Company,MUSTANG GTD,5.2,8,12
+Ford Motor Company,RANGER 2WD,2.3,4,23
+Ford Motor Company,RANGER 4WD,2.3,4,22
+Ford Motor Company,RANGER 4WD,2.7,6,20
+Ford Motor Company,RANGER RAPTOR 4WD,3.0,6,17
+Hyundai,G70 AWD,2.5,4,23
+Hyundai,G70 RWD,2.5,4,24
+Hyundai,G80 AWD,2.5,4,24
+Hyundai,G80 AWD,3.5,6,19
+Hyundai,G90 AWD,3.5,6,21
+Hyundai,G90 MHEV,3.5,6,20
+Hyundai,GV70 AWD,2.5,4,22
+Hyundai,GV70 AWD,3.5,6,20
+Hyundai,GV80 AWD,2.5,4,21
+Hyundai,GV80 AWD,3.5,6,19
+Hyundai,GV80 MHEV,3.5,6,20
+General Motors,CANYON 2WD,2.7,4,20
+General Motors,CANYON 4WD,2.7,4,19
+General Motors,CANYON AT4X 4WD,2.7,4,17
+General Motors,CANYON AT4X AEV 4WD,2.7,4,16
+General Motors,SIERRA 2WD,3.0,6,26
+General Motors,SIERRA 2WD,2.7,4,19
+General Motors,SIERRA 2WD,5.3,8,18
+General Motors,SIERRA 2WD CAB CHASSIS,5.3,8,16
+General Motors,SIERRA 4WD,3.0,6,24
+General Motors,SIERRA 4WD,2.7,4,17
+General Motors,SIERRA 4WD,5.3,8,17
+General Motors,SIERRA 4WD,6.2,8,16
+General Motors,SIERRA 4WD AT4X,3.0,6,19
+General Motors,SIERRA 4WD AT4X,6.2,8,15
+General Motors,SIERRA 4WD CAB CHASSIS,5.3,8,15
+General Motors,SIERRA 4WD MUD TERRAIN TIRES,3.0,6,23
+General Motors,SIERRA 4WD MUD TERRAIN TIRES,2.7,4,16
+General Motors,SIERRA 4WD MUD TERRAIN TIRES,5.3,8,17
+General Motors,SIERRA 4WD MUD TERRAIN TIRES,6.2,8,15
+General Motors,YUKON 2WD,6.2,8,17
+General Motors,YUKON 2WD,5.3,8,17
+General Motors,YUKON 2WD,3.0,6,23
+General Motors,YUKON 4WD,6.2,8,16
+General Motors,YUKON 4WD,5.3,8,17
+General Motors,YUKON 4WD,3.0,6,22
+General Motors,YUKON XL 2WD,6.2,8,16
+General Motors,YUKON XL 2WD,5.3,8,17
+General Motors,YUKON XL 2WD,3.0,6,23
+General Motors,YUKON XL 4WD,6.2,8,16
+General Motors,YUKON XL 4WD,5.3,8,16
+General Motors,YUKON XL 4WD,3.0,6,22
+Honda,ACCORD,1.5,4,32
+Honda,ACCORD,2.0,4,48
+Honda,ACCORD SPORT/TOURING,2.0,4,44
+Honda,CIVIC 4Dr,1.5,4,31
+Honda,CIVIC 4Dr,2.0,4,36
+Honda,CIVIC 5Dr,2.0,4,34
+Honda,CR-V AWD,1.5,4,28
+Honda,CR-V AWD,2.0,4,37
+Honda,CR-V FWD,1.5,4,30
+Honda,CR-V FWD,2.0,4,40
+Honda,HR-V AWD,2.0,4,27
+Honda,HR-V FWD,2.0,4,28
+Honda,PASSPORT AWD,3.5,6,21
+Honda,Pilot AWD Touring/Elite/Black,3.5,6,21
+Honda,Pilot AWD TRAILSPORT,3.5,6,20
+Honda,RIDGELINE AWD TrailSport,3.5,6,20
+Hyundai,Elantra,1.6,4,31
+Hyundai,Elantra Hybrid,1.6,4,50
+Hyundai,Elantra Hybrid Blue,1.6,4,54
+Hyundai,Elantra N,2.0,4,23
+Hyundai,Palisade AWD,3.8,6,21
+Hyundai,Palisade FWD,3.8,6,22
+Hyundai,Santa Cruz AWD,2.5,4,24
+Hyundai,Santa Cruz FWD,2.5,4,25
+Hyundai,Santa Cruz XRT AWD,2.5,4,21
+Hyundai,Santa Fe AWD,2.5,4,23
+Hyundai,Santa Fe AWD XRT,2.5,4,22
+Hyundai,Santa Fe FWD,2.5,4,24
+Hyundai,Santa Fe Hybrid AWD,1.6,4,34
+Hyundai,Santa Fe Hybrid FWD,1.6,4,36
+Hyundai,Sonata AWD,2.5,4,28
+Hyundai,Sonata FWD,2.5,4,29
+Hyundai,Sonata Hybrid,2.0,4,47
+Hyundai,Tucson AWD,2.5,4,26
+Hyundai,Tucson FWD,2.5,4,28
+Hyundai,Tucson Hybrid,1.6,4,35
+Hyundai,Tucson Hybrid Blue,1.6,4,38
+Hyundai,Venue,1.6,4,31
+Ineos Automotive Li,Grenadier Station Wagon,3.0,6,15
+Ineos Automotive Li,Grenadier Trialmaster Edition,3.0,6,14
+Nissan,QX60 AWD,2.0,4,24
+Nissan,QX60 FWD,2.0,4,24
+Nissan,QX80 2WD,3.5,6,18
+Nissan,QX80 4WD,3.5,6,17
+Jaguar Land Rover L,F-PACE,2.0,4,24
+Jaguar Land Rover L,F-PACE MHEV,3.0,6,21
+Jaguar Land Rover L,F-PACE SVR,5.0,8,17
+Fca Us Llc,Compass 4X4,2.0,4,27
+Fca Us Llc,Gladiator 4X4,3.6,6,19
+Fca Us Llc,Grand Cherokee L 4X2,3.6,6,21
+Fca Us Llc,Grand Cherokee L 4X4,3.6,6,21
+Fca Us Llc,Grand Wagoneer 4x4,3.0,6,17
+Fca Us Llc,Grand Wagoneer L 4x4,3.0,6,17
+Fca Us Llc,Wagoneer 4x2,3.0,6,20
+Fca Us Llc,Wagoneer 4x4,3.0,6,19
+Fca Us Llc,Wagoneer L 4x2,3.0,6,20
+Fca Us Llc,Wagoneer L 4x4,3.0,6,19
+Fca Us Llc,Wrangler 2dr 4X4,2.0,4,21
+Fca Us Llc,Wrangler 2dr 4X4,3.6,6,19
+Fca Us Llc,Wrangler 4dr 4X4,2.0,4,21
+Fca Us Llc,Wrangler 4dr 4X4,3.6,6,20
+Fca Us Llc,Wrangler 4dr 4X4,6.4,8,14
+Kia,Carnival,3.5,6,21
+Kia,Carnival Hybrid,1.6,4,33
+Kia,K4,2.0,4,33
+Kia,K4,1.6,4,29
+Kia,K5,2.5,4,29
+Kia,K5 AWD,2.5,4,27
+Kia,Niro,1.6,4,49
+Kia,Niro FE,1.6,4,53
+Kia,Seltos AWD,1.6,4,25
+Kia,Seltos AWD,2.0,4,29
+Kia,Seltos FWD,2.0,4,31
+Kia,Sorento AWD,2.5,4,25
+Kia,Sorento FWD,2.5,4,26
+Kia,Sorento Hybrid AWD,1.6,4,34
+Kia,Sorento Hybrid FWD,1.6,4,36
+Kia,Soul Eco dynamics,2.0,4,31
+Kia,Sportage AWD,2.5,4,25
+Kia,Sportage FWD,2.5,4,28
+Kia,Sportage Hybrid AWD,1.6,4,38
+Kia,Sportage Hybrid FWD,1.6,4,43
+Kia,Sportage X-pro,2.5,4,26
+Kia,Telluride AWD,3.8,6,20
+Kia,Telluride FWD,3.8,6,22
+Jaguar Land Rover L,Defender 110,2.0,4,19
+Jaguar Land Rover L,Defender 110,5.0,8,16
+Jaguar Land Rover L,Defender 110 MHEV,4.4,8,17
+Jaguar Land Rover L,Defender 130,5.0,8,16
+Jaguar Land Rover L,Defender 130 Outbound,3.0,6,18
+Jaguar Land Rover L,Defender 130 P300 MHEV,3.0,6,18
+Jaguar Land Rover L,Defender 130 P400 MHEV,3.0,6,19
+Jaguar Land Rover L,Defender 90,2.0,4,19
+Jaguar Land Rover L,Defender 90,5.0,8,16
+Jaguar Land Rover L,Defender 90 MHEV,3.0,6,19
+Jaguar Land Rover L,Discovery,2.0,4,21
+Jaguar Land Rover L,Discovery Sport,2.0,4,20
+Jaguar Land Rover L,Range Rover Evoque,2.0,4,22
+Jaguar Land Rover L,Range Rover LWB MHEV,4.4,8,18
+Jaguar Land Rover L,Range Rover MHEV,4.4,8,19
+Jaguar Land Rover L,Range Rover P400 LWB MHEV,3.0,6,21
+Jaguar Land Rover L,Range Rover P400 MHEV,3.0,6,21
+Jaguar Land Rover L,Range Rover Sport MHEV,4.4,8,19
+Jaguar Land Rover L,Range Rover Sport P360 MHEV,3.0,6,22
+Jaguar Land Rover L,Range Rover Sport P400 MHEV,3.0,6,22
+Jaguar Land Rover L,Range Rover Sport SVR MHEV,4.4,8,18
+Jaguar Land Rover L,Range Rover SV LWB MHEV,4.4,8,18
+Jaguar Land Rover L,Range Rover SV MHEV,4.4,8,18
+Jaguar Land Rover L,Range Rover Velar P340 MHEV,3.0,6,22
+Jaguar Land Rover L,Range Rover Velar P400 MHEV,3.0,6,21
+Toyota,ES 250 AWD,2.5,4,28
+Toyota,ES 300h,2.5,4,44
+Toyota,ES 350,3.5,6,25
+Toyota,ES 350 F SPORT,3.5,6,25
+Toyota,GX 550,3.4,6,17
+Toyota,IS 300,2.0,4,25
+Toyota,IS 300 AWD,3.5,6,22
+Toyota,IS 350,3.5,6,23
+Toyota,IS 350 AWD,3.5,6,22
+Toyota,IS 500,5.0,8,20
+Toyota,LC 500,5.0,8,18
+Toyota,LC 500 CONVERTIBLE,5.0,8,18
+Toyota,LC 500h,3.5,6,29
+Toyota,LS 500,3.4,6,22
+Toyota,LS 500 AWD,3.4,6,21
+Toyota,LS 500h AWD,3.5,6,25
+Toyota,LX 600,3.4,6,19
+Toyota,LX 700h,3.4,6,20
+Toyota,NX 250,2.5,4,28
+Toyota,NX 250 AWD,2.5,4,28
+Toyota,NX 350 AWD,2.4,4,24
+Toyota,NX 350 AWD F SPORT,2.4,4,24
+Toyota,NX 350h AWD,2.5,4,39
+Toyota,RC 300,2.0,4,25
+Toyota,RC 300 AWD,3.5,6,22
+Toyota,RC 350,3.5,6,23
+Toyota,RC 350 AWD,3.5,6,22
+Toyota,RX 350,2.4,4,25
+Toyota,RX 350 AWD,2.4,4,24
+Toyota,RX 350h AWD,2.5,4,36
+Toyota,RX 500h AWD,2.4,4,27
+Toyota,TX 350,2.4,4,23
+Toyota,TX 350 AWD,2.4,4,23
+Toyota,TX 500h AWD,2.4,4,27
+Toyota,UX 300h,2.0,4,43
+Toyota,UX 300h AWD,2.0,4,42
+Ford Motor Company,AVIATOR AWD,3.0,6,20
+Ford Motor Company,AVIATOR RWD,3.0,6,21
+Ford Motor Company,CORSAIR AWD,2.0,4,24
+Ford Motor Company,CORSAIR FWD,2.0,4,25
+Ford Motor Company,NAUTILUS AWD,2.0,4,24
+Ford Motor Company,NAUTILUS HEV AWD,2.0,4,30
+Ford Motor Company,NAVIGATOR 4WD,3.5,6,17
+Lotus,Emira,3.5,6,19
+Maserati,Grancabrio,3.0,6,20
+Maserati,Grancabrio Trofeo,3.0,6,20
+Maserati,Granturismo,3.0,6,21
+Maserati,Granturismo Trofeo,3.0,6,21
+Maserati,Grecale,2.0,4,24
+Maserati,Grecale Modena,2.0,4,24
+Maserati,Grecale Trofeo,3.0,6,20
+Maserati,GT2 Stradale,3.0,6,18
+Maserati,MC20,3.0,6,18
+Maserati,MC20 Spyder,3.0,6,18
+Mazda,CX-30 4WD,2.5,4,29
+Mazda,CX-5 4WD,2.5,4,25
+Mazda,MAZDA CX-50 4WD,2.5,4,28
+Mazda,MAZDA CX-70 4WD,3.3,6,25
+Mazda,MAZDA CX-90 4WD,3.3,6,25
+Mazda,MAZDA3 4-Door 2WD,2.5,4,31
+Mazda,MAZDA3 4-Door 4WD,2.5,4,30
+Mazda,MAZDA3 5-Door 2WD,2.5,4,30
+Mazda,MAZDA3 5-Door 4WD,2.5,4,29
+Mercedes-Benz,AMG C 43 4MATIC,2.0,4,22
+Mercedes-Benz,AMG CLA 35 4MATIC,2.0,4,25
+Mercedes-Benz,AMG CLA 45 S 4MATIC,2.0,4,23
+Mercedes-Benz,AMG CLE 53 4MATIC+ (convertible),3.0,6,22
+Mercedes-Benz,AMG CLE 53 4MATIC+ (coupe),3.0,6,23
+Mercedes-Benz,AMG G 63,4.0,8,15
+Mercedes-Benz,AMG GLA 35 4MATIC,2.0,4,24
+Mercedes-Benz,AMG GLB 35 4MATIC,2.0,4,23
+Mercedes-Benz,AMG GLC 43 4MATIC,2.0,4,21
+Mercedes-Benz,AMG GLC 43 4MATIC (coupe),2.0,4,21
+Mercedes-Benz,AMG GLE 53 4MATIC+,3.0,6,20
+Mercedes-Benz,AMG GLE 53 4MATIC+ (coupe),3.0,6,20
+Mercedes-Benz,AMG GLE 63 S 4MATIC+,4.0,8,16
+Mercedes-Benz,AMG GLE 63 S 4MATIC+ (coupe),4.0,8,16
+Mercedes-Benz,AMG GLS 63 4MATIC+,4.0,8,15
+Mercedes-Benz,AMG GT 43 (coupe),2.0,4,22
+Mercedes-Benz,AMG GT 43 4MATIC+,3.0,6,21
+Mercedes-Benz,AMG GT 53 4MATIC+,3.0,6,21
+Mercedes-Benz,AMG GT 55 4MATIC+ (coupe),4.0,8,14
+Mercedes-Benz,AMG GT 63 4MATIC+,4.0,8,17
+Mercedes-Benz,AMG GT 63 4MATIC+ (coupe),4.0,8,14
+Mercedes-Benz,AMG GT 63 PRO 4MATIC+ (coupe),4.0,8,14
+Mercedes-Benz,AMG SL 43,2.0,4,22
+Mercedes-Benz,AMG SL 55 4MATIC+,4.0,8,16
+Mercedes-Benz,AMG SL 63 4MATIC+,4.0,8,16
+Mercedes-Benz,C 300,2.0,4,29
+Mercedes-Benz,C 300 4MATIC,2.0,4,27
+Mercedes-Benz,CLE 300 4MATIC (convertible),2.0,4,26
+Mercedes-Benz,CLE 300 4MATIC (Coupe),2.0,4,27
+Mercedes-Benz,CLE 450 4MATIC (Convertible),3.0,6,26
+Mercedes-Benz,CLE 450 4MATIC (Coupe),3.0,6,26
+Mercedes-Benz,E 350,2.0,4,28
+Mercedes-Benz,E 350 4MATIC,2.0,4,27
+Mercedes-Benz,E 450 4MATIC,3.0,6,25
+Mercedes-Benz,E 450 4MATIC All-Terrain Wagon,3.0,6,25
+Mercedes-Benz,G 550,3.0,6,18
+Mercedes-Benz,GLB 250,2.0,4,28
+Mercedes-Benz,GLB 250 4MATIC,2.0,4,27
+Mercedes-Benz,GLE 350,2.0,4,23
+Mercedes-Benz,GLE 350 4MATIC,2.0,4,22
+Mercedes-Benz,GLE 450 4MATIC,3.0,6,21
+Mercedes-Benz,GLE 450 4MATIC (coupe),3.0,6,21
+Mercedes-Benz,GLE 580 4MATIC,4.0,8,17
+Mercedes-Benz,GLS 580 4MATIC,4.0,8,16
+Mercedes-Benz,GLS 600 4MATIC Maybach,4.0,8,15
+Mercedes-Benz,S 500 4MATIC,3.0,6,24
+Mercedes-Benz,S 580 4MATIC,4.0,8,20
+Mercedes-Benz,S 580 4MATIC Maybach,4.0,8,20
+Mercedes-Benz,S 680 4MATIC Maybach,6.0,12,15
+Bmw,Cooper Convertible,2.0,4,30
+Bmw,Cooper Hardtop 2 Door,2.0,4,32
+Bmw,Cooper Hardtop 4 Door,2.0,4,32
+Bmw,Cooper S Convertible,2.0,4,30
+Bmw,Cooper S Hardtop 4 Door,2.0,4,32
+Bmw,Countryman S ALL4,2.0,4,27
+Bmw,JCW Convertible,2.0,4,30
+Bmw,JCW Countryman ALL4,2.0,4,26
+Bmw,JCW Hardtop 2 Door,2.0,4,30
+Nissan,Outlander 2WD,2.5,4,27
+Nissan,Outlander 4WD,2.5,4,26
+Mitsubishi Motors Co,Outlander Sport 4WD,2.0,4,26
+Mitsubishi Motors Co,Outlander Sport 4WD,2.4,4,25
+Nissan,ALTIMA,2.5,4,32
+Nissan,ALTIMA AWD,2.5,4,28
+Nissan,ALTIMA SL/SR,2.5,4,31
+Nissan,ARMADA 2WD,3.5,6,18
+Nissan,ARMADA 4WD,3.5,6,17
+Nissan,ARMADA 4WD PRO-4X,3.5,6,16
+Nissan,FRONTIER 2WD,3.8,6,21
+Nissan,FRONTIER 4WD,3.8,6,19
+Nissan,FRONTIER 4WD PRO-4X,3.8,6,18
+Nissan,KICKS,2.0,4,31
+Nissan,KICKS AWD,2.0,4,30
+Nissan,KICKS PLAY,1.6,4,33
+Nissan,MURANO AWD,2.0,4,23
+Nissan,MURANO FWD,2.0,4,23
+Nissan,PATHFINDER 2WD,3.5,6,23
+Nissan,PATHFINDER 4WD,3.5,6,23
+Nissan,PATHFINDER 4WD PLATINUM,3.5,6,22
+Nissan,PATHFINDER 4WD ROCK CREEK,3.5,6,21
+Nissan,ROGUE AWD,1.5,3,31
+Nissan,ROGUE AWD ROCK CREEK,1.5,3,29
+Nissan,ROGUE AWD SL/PLATINUM,1.5,3,31
+Nissan,ROGUE FWD,1.5,3,33
+Nissan,ROGUE FWD SL/PLATINUM,1.5,3,32
+Nissan,SENTRA,2.0,4,34
+Nissan,SENTRA SR,2.0,4,33
+Nissan,Z,3.0,6,20
+Nissan,Z NISMO,3.0,6,19
+Porsche,718 Boxster,2.0,4,22
+Porsche,718 Boxster GTS 4.0,4.0,6,19
+Porsche,718 Boxster S,2.5,4,21
+Porsche,718 Cayman,2.0,4,22
+Porsche,718 Cayman GTS 4.0,4.0,6,19
+Porsche,718 Cayman S,2.5,4,21
+Porsche,718 GT4 RS,4.0,6,16
+Porsche,718 Spyder RS,4.0,6,16
+Porsche,911 Carrera 4 GTS,3.6,6,19
+Porsche,911 Carrera 4 GTS Cabriolet,3.6,6,19
+Porsche,911 Carrera GTS,3.6,6,20
+Porsche,911 Carrera GTS Cabriolet,3.6,6,19
+Porsche,911 Carrera T Cabriolet,3.0,6,19
+Porsche,911 Targa 4 GTS,3.6,6,19
+Porsche,911 Turbo,3.7,6,17
+Porsche,911 Turbo Cabriolet,3.7,6,16
+Porsche,911 Turbo S,3.7,6,16
+Porsche,911 Turbo S Cabriolet,3.7,6,16
+Porsche,Cayenne,3.0,6,19
+Porsche,Cayenne Coupe,3.0,6,19
+Porsche,Cayenne GTS,4.0,8,18
+Porsche,Cayenne GTS Coupe,4.0,8,18
+Porsche,Cayenne S,4.0,8,18
+Porsche,Cayenne S Coupe,4.0,8,18
+Porsche,Cayenne Turbo GT,4.0,8,17
+Porsche,Macan,2.0,4,21
+Porsche,Macan GTS,2.9,6,19
+Porsche,Macan S,2.9,6,19
+Porsche,Macan T,2.0,4,21
+Porsche,Panamera,2.9,6,21
+Porsche,Panamera 4,2.9,6,21
+Porsche,Panamera GTS,4.0,8,18
+Fca Us Llc,1500 4X2,3.0,6,21
+Fca Us Llc,1500 4X2,3.6,6,22
+Fca Us Llc,1500 4X4,3.0,6,19
+Fca Us Llc,1500 4X4,3.6,6,21
+Fca Us Llc,1500 HFE 4X2,3.6,6,23
+Fca Us Llc,1500 HO 4x4,3.0,6,17
+Fca Us Llc,1500 RHO 4x4,3.0,6,15
+Rolls-Royce,Black Badge Cullinan,6.7,12,14
+Rolls-Royce,Black Badge Ghost,6.7,12,14
+Rolls-Royce,Cullinan,6.7,12,14
+Rolls-Royce,Ghost,6.7,12,14
+Rolls-Royce,Ghost Extended,6.7,12,14
+Rolls-Royce,Phantom,6.7,12,14
+Rolls-Royce,Phantom Extended,6.7,12,14
+Subaru,ASCENT AWD,2.4,4,22
+Subaru,ASCENT LIMITED/TOURING/ONYX EDITION AWD,2.4,4,21
+Subaru,BRZ,2.4,4,22
+Subaru,CROSSTREK AWD,2.5,4,29
+Subaru,CROSSTREK WILDERNESS AWD,2.5,4,27
+Subaru,FORESTER HYBRID AWD,2.5,4,35
+Subaru,FORESTER SPORT/TOURING AWD,2.5,4,28
+Subaru,FORESTER WILDERNESS AWD,2.5,4,26
+Subaru,IMPREZA,2.0,4,30
+Subaru,IMPREZA,2.5,4,29
+Subaru,LEGACY,2.4,4,26
+Subaru,OUTBACK AWD,2.4,4,25
+Subaru,OUTBACK WILDERNESS AWD,2.4,4,23
+Subaru,WRX,2.4,4,22
+Toyota,4RUNNER 2WD,2.4,4,22
+Toyota,4RUNNER 4WD,2.4,4,21
+Toyota,CAMRY HEV AWD LE,2.5,4,50
+Toyota,CAMRY HEV AWD SE/XLE,2.5,4,46
+Toyota,CAMRY HEV AWD XSE,2.5,4,44
+Toyota,CAMRY HEV FF LE,2.5,4,51
+Toyota,CAMRY HEV FF SE/XLE/XSE,2.5,4,47
+Toyota,COROLLA,2.0,4,35
+Toyota,COROLLA CROSS,2.0,4,32
+Toyota,COROLLA CROSS AWD,2.0,4,30
+Toyota,COROLLA CROSS HYBRID AWD,2.0,4,42
+Toyota,COROLLA FX,2.0,4,34
+Toyota,COROLLA HYBRID,1.8,4,50
+Toyota,COROLLA HYBRID AWD,1.8,4,48
+Toyota,GR COROLLA,1.6,3,22
+Toyota,GR86,2.4,4,22
+Toyota,GRAND HIGHLANDER AWD LE/XLE,2.4,4,23
+Toyota,GRAND HIGHLANDER AWD LIMITED/PLATINUM,2.4,4,22
+Toyota,GRAND HIGHLANDER HYBRID,2.5,4,36
+Toyota,GRAND HIGHLANDER HYBRID AWD,2.5,4,34
+Toyota,GRAND HIGHLANDER HYBRID AWD,2.4,4,27
+Toyota,GRAND HIGHLANDER LE/XLE,2.4,4,24
+Toyota,GRAND HIGHLANDER LIMITED,2.4,4,24
+Toyota,HIGHLANDER,2.4,4,25
+Toyota,HIGHLANDER AWD,2.4,4,24
+Toyota,HIGHLANDER HYBRID AWD,2.5,4,35
+Toyota,HIGHLANDER HYBRID AWD LTD/PLAT,2.5,4,35
+Toyota,LAND CRUISER,2.4,4,23
+Toyota,PRIUS,2.0,4,57
+Toyota,PRIUS AWD,2.0,4,54
+Toyota,PRIUS AWD XLE/LTD,2.0,4,49
+Toyota,PRIUS XLE/LTD,2.0,4,52
+Toyota,RAV4,2.5,4,30
+Toyota,RAV4 AWD,2.5,4,29
+Toyota,RAV4 AWD LE,2.5,4,30
+Toyota,RAV4 HYBRID AWD,2.5,4,39
+Toyota,RAV4 HYBRID AWD WOODLAND EDITION,2.5,4,37
+Toyota,SEQUOIA 2WD,3.4,6,22
+Toyota,SEQUOIA 4WD,3.4,6,20
+Toyota,SIENNA,2.5,4,36
+Toyota,SIENNA AWD,2.5,4,35
+Bmw,Supra 2.0,2.0,4,27
+Bmw,Supra 3.0,3.0,6,26
+Toyota,TACOMA 2WD,2.4,4,23
+Toyota,TACOMA 4WD,2.4,4,21
+Toyota,TACOMA 4WD MT,2.4,4,20
+Toyota,TACOMA HYBRID 4WD,2.4,4,23
+Toyota,TACOMA SR5/SPORT/OFFROAD/LIMITED 4WD,2.4,4,21
+Toyota,TACOMA SR5/SPORT/PRERUNNER 2WD,2.4,4,22
+Toyota,TOYOTA CROWN AWD,2.5,4,41
+Toyota,TOYOTA CROWN AWD,2.4,4,30
+Toyota,TOYOTA CROWN SIGNIA AWD,2.5,4,38
+Toyota,TUNDRA 2WD,3.4,6,20
+Toyota,TUNDRA 4WD,3.4,6,19
+Toyota,TUNDRA 4WD PRO,3.4,6,19
+Volkswagen Group Of,Atlas,2.0,4,22
+Volkswagen Group Of,Atlas 4Motion Peak Edition,2.0,4,20
+Volkswagen Group Of,Atlas Cross Sport,2.0,4,23
+Volkswagen Group Of,Atlas Cross Sport 4Motion,2.0,4,21
+Volkswagen Group Of,Atlas SE 4Motion,2.0,4,21
+Volkswagen Group Of,Atlas SEL 4Motion,2.0,4,21
+Volkswagen Group Of,GLI,2.0,4,29
+Volkswagen Group Of,Golf R,2.0,4,25
+Volkswagen Group Of,GTI,2.0,4,27
+Volkswagen Group Of,Jetta,1.5,4,33
+Volkswagen Group Of,Jetta Sport/SE/SEL,1.5,4,33
+Volkswagen Group Of,Taos,1.5,4,31
+Volkswagen Group Of,Taos 4Motion,1.5,4,28
+Volkswagen Group Of,Tiguan,2.0,4,28
+Volkswagen Group Of,Tiguan 4Motion,2.0,4,25
+Volkswagen Group Of,Tiguan S,2.0,4,29
+Volvo,S60 B5,2.0,4,30
+Volvo,S60 B5 AWD,2.0,4,28
+Volvo,S90 B6 AWD,2.0,4,26
+Volvo,V90CC B6 AWD,2.0,4,25
+Volvo,XC40 B5 AWD,2.0,4,26
+Volvo,XC60 B5 AWD,2.0,4,26
+Volvo,XC90 B5 AWD,2.0,4,26
+Volvo,XC90 B6 AWD,2.0,4,23
