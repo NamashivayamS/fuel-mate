@@ -41,8 +41,8 @@ init_db()
 
 # Fuel prices
 fuel_prices = {
-    'petrol': 96.72,
-    'diesel': 89.62
+    'petrol': 101.28,
+    'diesel': 93.41
 }
 
 style_map = {"eco": 0, "normal": 1, "aggressive": 2}
@@ -82,8 +82,8 @@ def get_specs():
     spec = vehicles_df[(vehicles_df['make'].str.lower() == make.lower()) & 
                        (vehicles_df['model'] == model_name)].iloc[0]
     return jsonify({
-        "engine_size": spec['engine_size'],
-        "cylinders": spec['cylinders']
+        "engine_size": float(spec['engine_size']),
+        "cylinders": int(spec['cylinders'])
     })
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -192,8 +192,8 @@ def predict():
             float(temp)
         ]
         pred = model.predict([features])[0]
-        min_fuel = round(pred, 2)
-        safe_fuel = round(pred * 1.1, 2)
+        min_fuel = round(float(pred), 2)
+        safe_fuel = round(float(pred * 1.1), 2)
         
         current_fuel_price = fuel_prices[str(fuel)]
         estimated_cost = round(safe_fuel * current_fuel_price, 2)
